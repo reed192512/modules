@@ -72,7 +72,7 @@ end
 ---------------------------------------
 function notify(a,b)
     notifications:message {
-        Title = "Paradise Hub | <font color='rgb(0, 255, 255)'>"..a.."</font>",
+        Title = "JayyHubv2 | <font color='rgb(0, 255, 255)'>"..a.."</font>",
         Description = b
     }
 end
