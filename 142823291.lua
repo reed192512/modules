@@ -1,1009 +1,2062 @@
--- Services
-local L_1_ = game:GetService("HttpService")
-local L_2_ = game:GetService("TeleportService")
-local L_3_ = game:GetService("Players")
-local L_4_ = game:GetService("RunService")
-local L_5_ = game:GetService("Workspace")
-local L_6_ = game:GetService("UserInputService")
-
--- Create a BindableEvent
-local L_7_ = Instance.new("BindableEvent")
-local L_8_ = L_7_.Event:Connect(function()
-end)
-
--- Variables
-local L_9_ = game:GetService("VirtualUser")
-local L_10_ = L_3_.LocalPlayer
-local L_11_ = L_3_.LocalPlayer
-local L_12_ = {}
-local L_13_
-
-local function L_14_func()
-	for L_50_forvar1, L_51_forvar2 in pairs(workspace:GetChildren()) do
-		if L_51_forvar2:FindFirstChild("CoinContainer") then
-			return L_51_forvar2.CoinContainer
-		elseif L_51_forvar2:FindFirstChild("Map") then
-			if pcall(function()
-				local L_52_ = L_51_forvar2.Map.CoinContainer
-			end) then
-				return L_51_forvar2.Map.CoinContainer
-			end
-		end
-	end
-	return nil
-end
-
-spawn(function()
-	while wait() do
-		if not getgenv().Disconnect then 
-			L_7_:Fire()  
-		else
-			wait(1)
-			L_8_:Disconnect()
-			getgenv().Disconnect = false
-			getgenv().nexus = false
-			return
-		end
-	end
-end)  
-
-
-local L_15_ = loadstring(game:HttpGet("https://github.com/reed192512/jayyhubcloud/releases/download/Jayyware/jayyware.txt"))()
-local L_16_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/reed192512/jayyhubcloud/main/SaveManager"))()
-local L_17_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/reed192512/jayyhubcloud/main/InterfaceManager"))()
-
-local L_18_ = L_15_.Options
-L_16_:SetLibrary(L_15_)
-
 --[[
-   premium = true
+    R3TH PRIV MURDER MYSTERY 2 SOURCE
+
+    Credits:
+        pethicial
 ]]
 
-local L_19_ = L_15_:CreateWindow({
-	Title = "JayyHubv2",
-	"",
-	SubTitle = "Where the fun begins. Powered By Jayyware.  jayy's Birthday script",
-	TabWidth = 160,
-	Size = UDim2.fromOffset(580, 460),
-	Acrylic = true,
-	Theme = "Dark",
-})
+--------------------------------------------------------------------------------------R3THPRIV----------------------------------------------------------------------------------------
+repeat wait() until game:IsLoaded()
 
-local L_20_ = {
-	Main = L_19_:AddTab({
-		Title = "Main",
-		Icon = "rbxassetid://10723424505"
-	}),
-	Misc = L_19_:AddTab({
-		Title = "Misc",
-		Icon = "rbxassetid://10709770431"
-	}),
-	Trap = L_19_:AddTab({
-		Title = "Trap",
-		Icon = "rbxassetid://10723396107"
-	}),
-	Player = L_19_:AddTab({
-		Title = "Player",
-		Icon = "rbxassetid://10747373176"
-	}),
-	Emotes = L_19_:AddTab({
-		Title = "Emotes",
-		Icon = "rbxassetid://4335480896"
-	}),
-	Premium = premium == "premium" and L_19_:AddTab({
-		Title = "Premium",
-		Icon = "rbxassetid://10709819149"
-	}),
-	Server = L_19_:AddTab({
-		Title = "Server",
-		Icon = "rbxassetid://10734949856"
-	}),
-	Settings = L_19_:AddTab({
-		Title = "Settings",
-		Icon = "settings"
-	}),
+if zac5mDuh2AXjsBebYVg6ZSMEf4yxQkw8dRLNGKHF7J9CPT3qWp ~= true then
+    print("[ JayyHubv2 ]: Stop attempting to directly execute the script or you will be banned.")
+    game.Players.LocalPlayer:Kick("[ JayyHubv2 ]: Stop attempting to directly execute the script or you will be banned.")
+    local function loadscript()
+        while true do
+            loadscript()
+        end
+    end
+
+    while true do
+        spawn(loadscript)
+    end
+    return
+end
+
+if WVryGeXr38ZZtdJWtrBtyeEKdm9Kkweaxm7tnUpuCcH835AQN2aLxV2NeG76kYZuWnCZz4yRr == nil then
+    print("[ JayyHubv2 ]: Stop attempting to directly execute the script or you will be banned.")
+    game.Players.LocalPlayer:Kick("[ JayyHubv2 ]: Stop attempting to directly execute the script or you will be banned.")
+    local function loadscript()
+        while true do
+            loadscript()
+        end
+    end
+
+    while true do
+        spawn(loadscript)
+    end
+    return
+end
+
+if T6FVH3SyPgXtYuZAzQCRJU7Ms2m5b9rGNLhkcnevfqDdKxB then
+    print("[ JayyHubv2 ]: Stop attempting to directly execute the script or you will be banned.")
+    game.Players.LocalPlayer:Kick("[ JayyHubv2 ]: Stop attempting to directly execute the script or you will be banned.")
+    local function loadscript()
+        while true do
+            loadscript()
+        end
+    end
+
+    while true do
+        spawn(loadscript)
+    end
+    return
+end
+
+getgenv().T6FVH3SyPgXtYuZAzQCRJU7Ms2m5b9rGNLhkcnevfqDdKxB = true
+
+for _,obj in next, game.Players.LocalPlayer.Backpack.Toys:GetChildren() do
+    if obj.Name == "SprayPaint" then
+        doeshavespraypaint = true
+    elseif doeshavespraypaint ~= true then
+        for _,obj in next, game.Players.LocalPlayer.Backpack:GetChildren() do
+            if obj.Name == "SprayPaint" then
+                doeshavespraypaint = true
+            elseif doeshavespraypaint ~= true then
+                if game.Players.LocalPlayer.Character:FindFirstChild("SprayPaint") then
+                    doeshavespraypaint = true
+                end
+            end
+        end
+        wait()
+    end
+end
+
+print("[ JayyHubv2 ]: R3TH PRIV MURDER MYSTERY 2 LOADING...")
+
+--------------------------------------------------------------------------------------THEME----------------------------------------------------------------------------------------
+privateProperties = {
+	Color = Color3.fromRGB(138,43,226); 
+	Font = Enum.Font.SourceSansBold;
+	TextSize = 18;
 }
 
-local L_21_ = L_20_.Main:AddToggle("AutoFarm", {
-	Title = "Auto Farm",
-	Default = false,
-	Callback = function(L_53_arg1)
-		if L_53_arg1 then 
-			repeat
-				local L_54_, L_55_ = pcall(function() 
+--------------------------------------------------------------------------------------DEFINE----------------------------------------------------------------------------------------
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
-					task.wait()
-					local L_56_ = L_14_func()
-					if L_56_ then
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/OtherScripts/VenyxUI.lua"))()
+local R3TH = library.new("R3TH PRIV                                                                                .gg/pethicial", 5013109572)
 
-						local function L_57_func(L_58_arg1)
-							local L_59_ = game.Players.LocalPlayer
-							local L_60_ = L_59_.Character
-							local L_61_ = L_60_ and L_60_:FindFirstChild("HumanoidRootPart")
+local Universal = R3TH:addPage("Universal", 5012540623)
+local Player = Universal:addSection("Player")
+local ESP = Universal:addSection("ESP")
+local Fling = Universal:addSection("Fling")
+local Game = Universal:addSection("Game")
+local Combat = R3TH:addPage("Combat", 5012544944)
+local Murderer = Combat:addSection("Murderer")
+local Sheriff = Combat:addSection("Sheriff")
+local Innocent = Combat:addSection("Innocent")
+local Main0 = R3TH:addPage("Main", 5012540623)
+local Teleports = Main0:addSection("Teleports")
+local Map = Main0:addSection("Map")
+local Chams = Main0:addSection("Chams")
+local Main = Main0:addSection("Main")
+local Misc = Main0:addSection("Misc")
+local Toggles = R3TH:addPage("Toggles", 5012544092)
+local World = Toggles:addSection("World")
+local Visual = Toggles:addSection("Visual")
+local ChromaGuns = Toggles:addSection("Chroma Guns")
+local Trading = Toggles:addSection("Trading")
+local Traps = Toggles:addSection("Traps")
+local Target0 = R3TH:addPage("Spray Paint", 5012542120)
+local Target = Target0:addSection("Target")
+local LoopTarget = Target0:addSection("Loop Target")
+local FE = Target0:addSection("FE")
+local Antijoin = Target0:addSection("Anti Join")
+local MultiKill = R3TH:addPage("Multi Destroy", 5012538583)
+local Mutlikill1 = MultiKill:addSection("Mutli Destroy 1")
+local Mutlikill2 = MultiKill:addSection("Mutli Destroy 2")
+local Mutlikill3 = MultiKill:addSection("Mutli Destroy 3")
+local Mutlikill4 = MultiKill:addSection("Mutli Destroy 4")
+local Mutlikill5 = MultiKill:addSection("Mutli Destroy 5")
+local Mutlikill6 = MultiKill:addSection("Mutli Destroy 6")
+local Mutlikill7 = MultiKill:addSection("Mutli Destroy 7")
+local Mutlikill8 = MultiKill:addSection("Mutli Destroy 8")
+local Mutlikill9 = MultiKill:addSection("Mutli Destroy 9")
+local Mutlikill10 = MultiKill:addSection("Mutli Destroy 10")
+local Mutlikill11 = MultiKill:addSection("Mutli Destroy 11")
+local Mutlikill12 = MultiKill:addSection("Mutli Destroy 12")
+local Settings0 = R3TH:addPage("Settings", 5012544372)
+local Settings = Settings0:addSection("Settings")
+local Credits = Settings0:addSection("Credits")
 
-							if L_61_ then
+local Players = game:GetService("Players")
+local Workspace = game:GetService("Workspace")
+local StarterGui = game:GetService("StarterGui")
+local LocalPlayer = Players.LocalPlayer
+local HttpService = game:GetService("HttpService")
+local players = game:GetService("Players")
+local ReplicatedStorage = game:GetService('ReplicatedStorage')
+local N=game:GetService("VirtualInputManager")
 
-								local L_62_ = (L_61_.Position - L_58_arg1.p).Magnitude
-								local L_63_ = TweenInfo.new(L_62_ / 70, Enum.EasingStyle.Linear, Enum.EasingDirection.In)
+local mt = getrawmetatable(game);
+local old = {};
+for i, v in next, mt do old[i] = v end;
 
-								local L_64_ = game:GetService("TweenService"):Create(L_61_, L_63_, {
-									CFrame = L_58_arg1
-								})
-								L_64_:Play()
-								L_64_.Completed:Wait()
+setreadonly(mt,false)
 
-							end
-						end
+local defualtwalkspeed = 16
+local defualtjumppower = 50
+local defualtgravity = 196.1999969482422
+newwalkspeed = defualtwalkspeed
+newjumppower = defualtjumppower
+antiafk = true
 
-						if L_56_ and game:GetService("Players").LocalPlayer.PlayerGui.MainGUI.Game.Timer.Visible == true or game:GetService("Players").LocalPlayer.PlayerGui.MainGUI.Game.CashBag.Visible == true then 
+local newflyspeed = 50
+local c
+local h
+local bv
+local bav
+local cam
+local flying
+local p = game.Players.LocalPlayer
+local buttons = {W = false, S = false, A = false, D = false, Moving = false}
 
-							local L_65_ = math.huge
-							local L_66_ = nil
+--------------------------------------------------------------------------------------FUNCTIONS----------------------------------------------------------------------------------------
+function toggleui()
+    wait()
+    local Toggle = false
+    
+    local R3THTOGGLEBUTTON = Instance.new("ScreenGui")
+    local Button = Instance.new("TextButton")
+    local UICorner = Instance.new("UICorner")
+    local UICorner_2 = Instance.new("UICorner")
 
-							local L_67_ = game.Players.LocalPlayer
-							local L_68_ = L_67_.Character
-							local L_69_ = L_68_ and L_68_:FindFirstChild("HumanoidRootPart")
+    R3THTOGGLEBUTTON.Name = "R3THTOGGLEBUTTON"
+    R3THTOGGLEBUTTON.Parent = game.CoreGui
+    
+    Button.Name = "Button"
+    Button.Parent = R3THTOGGLEBUTTON
+    Button.BackgroundColor3 = Color3.fromRGB(77, 77, 77) -- CHANGES BUTTON COLOR
+    Button.BorderColor3 = Color3.fromRGB(52, 52, 52)
+    Button.BorderSizePixel = 0
+    Button.Position = UDim2.new(0.942588627, 0, 0.223685458, 0)
+    Button.Size = UDim2.new(0.0358672254, 0, 0.0771396905, 0)
+    Button.Font = Enum.Font.FredokaOne
+    Button.Text = "T"
+    Button.TextColor3 = Color3.fromRGB(255, 255, 255) -- CHANGES TEXT COLOR
+    Button.TextScaled = true
+    Button.TextSize = 33.000
+    Button.TextWrapped = true
+    Button.Draggable = true
+    
+    UICorner.Parent = Button
+    
+    UICorner_2.Parent = Button
+    
+    Button.MouseButton1Click:connect(function()
+        Toggle = not Toggle
+    end)
+    
+    while r3thtoggleui do
+        function toggleuifix()
+        if Toggle then
+            Toggle = false
+            R3TH:toggle()
+            wait()
+        end
+    end
+    wait()
+    pcall(toggleuifix)
+    end
+end
 
-							local L_70_ = L_69_.Position
+function sendnotification(notificationmessage)
+    if WVryGeXr38ZZtdJWtrBtyeEKdm9Kkweaxm7tnUpuCcH835AQN2aLxV2NeG76kYZuWnCZz4yRr == true then
+        StarterGui:SetCore("SendNotification", {
+            Title = "R3TH PRIV";
+            Text = notificationmessage;
+            Duration = 5;
+        })
+    else
+        Notification:Notify(
+            {Title = "R3TH PRIV", Description = notificationmessage},
+            {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
+        )
+    end
+end
 
-							for L_71_forvar1, L_72_forvar2 in pairs(L_56_:GetChildren()) do
-								if L_72_forvar2.Name == 'Coin_Server' then
-									local L_73_ = L_72_forvar2.Coin.Position
-									local L_74_ = (L_70_ - L_73_).Magnitude
+function loadesp()
+    if loadespenabled ~= true then
+        loadespenabled = true
+        R3THESP = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/OtherScripts/ESP.lua"))()
+        R3THESP.Box = false
+        R3THESP.BoxOutline = false
+        R3THESP.HealthBar = false
+        R3THESP.Names = false
+        R3THESP.NamesOutline = false
+    end
+end
 
-									if L_74_ < L_65_ then
-										L_65_ = L_74_
-										L_66_ = L_72_forvar2
-									end
-								end
-							end
+function startFly()
+    if not p.Character or not p.Character.Head or flying then return end
+    c = p.Character
+    h = c.Humanoid
+    h.PlatformStand = true
+    cam = workspace:WaitForChild('Camera')
+    bv = Instance.new("BodyVelocity")
+    bav = Instance.new("BodyAngularVelocity")
+    bv.Velocity, bv.MaxForce, bv.P = Vector3.new(0, 0, 0), Vector3.new(10000, 10000, 10000), 1000
+    bav.AngularVelocity, bav.MaxTorque, bav.P = Vector3.new(0, 0, 0), Vector3.new(10000, 10000, 10000), 1000
+    bv.Parent = c.Head
+    bav.Parent = c.Head
+    flying = true
+    h.Died:connect(function() flying = false end)
+end
+  
+function endFly()
+    if not p.Character or not flying then return end
+    h.PlatformStand = false
+    bv:Destroy()
+    bav:Destroy()
+    flying = false
+end
 
-							if L_66_ and not L_13_ then
-								L_57_func(CFrame.new(L_66_.Coin.CFrame.p))
+function setVec(vec)
+    return vec * (newflyspeed / vec.Magnitude)
+end
 
-								for L_75_forvar1 = 0, 10, 1 do
-									L_68_:SetPrimaryPartCFrame(L_68_.PrimaryPart.CFrame * CFrame.Angles(0, math.rad(L_75_forvar1), 0))
-									wait(0.02)
-								end
+function CreateHighlight()
+    for i, v in pairs(Players:GetChildren()) do
+        if v ~= LocalPlayer and v.Character and not v.Character:FindFirstChild("Highlight") then
+            Instance.new("Highlight", v.Character)
+        end
+    end
+end
 
-								L_66_.Name = 'False_Coin'
-
-								repeat
-									wait()
-								until L_66_.Name ~= 'Coin_Server'
-								wait(1)
-							end
-						end
-					end
-				end)
-			until not L_18_.AutoFarm.Value or not L_8_.Connected
+function UpdateHighlights()
+    for _, v in pairs(Players:GetChildren()) do
+        if v ~= LocalPlayer and v.Character and v.Character:FindFirstChild("Highlight") then
+            Highlight = v.Character:FindFirstChild("Highlight")
+            if v.Name == Sheriff and IsAlive(v) and sheriffchams == true then
+                Highlight.FillColor = Color3.fromRGB(0, 0, 225)
+            elseif v.Name == Murder and IsAlive(v) and murdchams == true then
+                Highlight.FillColor = Color3.fromRGB(225, 0, 0)
+            elseif v.Name == Hero and IsAlive(v) and not IsAlive(game.Players[Sheriff]) and sheriffchams == true then
+                Highlight.FillColor = Color3.fromRGB(255, 250, 0)
+            else
+                Highlight.FillColor = Color3.fromRGB(0, 225, 0)
+            end
 		end
 	end
-})
+end	
 
-local L_22_ = L_20_.Main:AddToggle("CoinChams", {
-	Title = "Coin Chams",
-	Default = false,
-	Callback = function(L_76_arg1)
-		if L_76_arg1 then 
-			repeat
-				task.wait()
-				local L_77_ = L_14_func()
-				if L_77_ then
-					for L_78_forvar1, L_79_forvar2 in pairs(L_77_:GetChildren()) do
-						if L_79_forvar2.Name == 'Coin_Server' and not L_12_[L_79_forvar2] then
-							local L_80_ = Instance.new("Highlight")
-							L_80_.Name = "EspPareet"
-							L_80_.FillTransparency = 0.5
-							L_80_.FillColor = Color3.new(94 / 255, 1, 255 / 255)
-							L_80_.OutlineColor = Color3.new(94 / 255, 1, 255 / 255)
-							L_80_.OutlineTransparency = 0
-							L_80_.Parent = L_79_forvar2.Parent
-							L_12_[L_79_forvar2] = L_80_  
-						end
-					end
-				end 
-			until not L_18_.CoinChams.Value or not L_8_.Connected
-			for L_81_forvar1, L_82_forvar2 in pairs(L_12_) do
-				L_82_forvar2:Destroy()
-			end         
+function IsAlive(Player)
+    for i, v in pairs(roles) do
+        if Player.Name == i then
+            if not v.Killed and not v.Dead then
+                return true
+            else
+                return false
+            end
 		end
-	end
-})
-
-local L_23_ = L_20_.Main:AddToggle("PlayerESP", {
-	Title = "Player Chams",
-	Default = false,
-	Callback = function(L_83_arg1)
-	end
-})  
---WaitForChild
-spawn(function()
-	while wait() do
-		if not L_8_.Connected then 
-			for L_84_forvar1, L_85_forvar2 in next, game:GetService('Players'):GetPlayers() do
-				if L_85_forvar2.Name ~= game:GetService('Players').LocalPlayer.Name then
-					pcall(function()
-						L_85_forvar2.Character.Highlight:Destroy()
-					end)
-				end 
-			end 
-			return 
-		end  
-		if not L_18_.PlayerESP.Value then
-			for L_86_forvar1, L_87_forvar2 in next, game:GetService('Players'):GetPlayers() do
-				if L_87_forvar2.Name ~= game:GetService('Players').LocalPlayer.Name then
-					pcall(function()
-						L_87_forvar2.Character.Highlight:Destroy()
-					end)
-				end 
-			end
-		else
-			local L_88_ = game:GetService("ReplicatedStorage")
-			local L_89_ = L_88_:FindFirstChild("GetPlayerData", true):InvokeServer()
-
-			function CreateHighlight()
-
-				for L_90_forvar1, L_91_forvar2 in pairs(game:GetService("Players"):GetChildren()) do
-					pcall(function()
-						if L_91_forvar2 ~= L_11_ and L_91_forvar2.Character and not L_91_forvar2.Character:FindFirstChild("Highlight") then
-							Instance.new("Highlight", L_91_forvar2.Character)
-
-						end
-					end)
-				end
-
-			end
-
-			function UpdateHighlights()
-				for L_92_forvar1, L_93_forvar2 in pairs(game:GetService("Players"):GetChildren()) do
-					local L_94_ = L_93_forvar2.Character and L_93_forvar2.Character:FindFirstChild("Highlight")
-					if L_93_forvar2 ~= L_11_ and L_94_ then
-						if IsAlive(L_93_forvar2) then
-							local L_95_ = L_89_[L_93_forvar2.Name]
-							if L_95_ then
-								if L_95_.Role == "Murderer" then
-									L_94_.FillColor = Color3.fromRGB(225, 0, 0)
-								elseif L_95_.Role == 'Sheriff' then
-									L_94_.FillColor = Color3.fromRGB(0, 0, 225)
-								elseif L_95_.Role == 'Hero' then
-									L_94_.FillColor = Color3.fromRGB(0, 0, 225)
-								else
-									L_94_.FillColor = Color3.fromRGB(76, 215, 134)
-								end
-							else
-								L_94_.FillColor = Color3.fromRGB(76, 215, 134)
-							end
-						else
-							L_94_.FillColor = Color3.fromRGB(255, 255, 255)
-						end
-					end
-				end
-			end
-
-			function IsAlive(L_96_arg1)
-				local L_97_ = L_89_[L_96_arg1.Name]
-				return L_97_ and not L_97_.Killed and not L_97_.Dead
-			end  
-
-			Sheriff, Murder, Hero = nil, nil, nil
-			for L_98_forvar1, L_99_forvar2 in pairs(L_89_) do
-				if L_99_forvar2.Role == "Murderer" then
-					Murder = L_98_forvar1
-				elseif L_99_forvar2.Role == 'Sheriff' then
-					Sheriff = L_98_forvar1
-				elseif L_99_forvar2.Role == 'Hero' then
-					Hero = L_98_forvar1
-				end
-			end  
-			if L_18_.PlayerESP.Value and L_8_.Connected then  
-				CreateHighlight()
-				UpdateHighlights()
-			end
-		end
-	end
-end)  
-
-local L_24_ = L_20_.Main:AddToggle("GrabGun", {
-	Title = "Automatically Grab Gun",
-	Default = false,
-	Callback = function(L_100_arg1)
-		if L_100_arg1 then 
-			repeat
-				task.wait()
-				local L_101_, L_102_ = pcall(function() 
-
-					local L_103_ = L_3_.LocalPlayer
-					local L_104_ = L_103_.Character
-					local L_105_ = L_104_:FindFirstChild("HumanoidRootPart")
-
-					local L_106_ = GetMurderer()
-					local L_107_ = game:GetService("Workspace"):FindFirstChild("GunDrop")
-					local L_108_ = game:GetService("Players").LocalPlayer.PlayerGui.MainGUI.Game.CashBag.Visible == true
-
-					if L_107_ and L_108_ then
-						local L_109_ = workspace:FindFirstChild(L_106_)
-
-						if L_109_ then
-							local L_110_ = L_109_:WaitForChild("HumanoidRootPart")
-							print(L_110_.Position)
-							local L_111_ = L_107_.Position
-
-							local L_112_ = (L_110_.Position - L_111_).Magnitude
-							local L_113_ = game.Players.LocalPlayer
-
-							if L_112_ > 25 then
-
-								if game:GetService("Players").LocalPlayer.PlayerGui.MainGUI.Game.Timer.Visible == false then 
-									local L_114_ = L_113_.Character.HumanoidRootPart.CFrame
-									wait(.5)
-									L_113_.Character.HumanoidRootPart.CFrame = L_107_.CFrame
-									L_113_.Character.Humanoid.Jump = true
-									wait(.3)
-									L_113_.Character.HumanoidRootPart.CFrame = L_114_
-								end  
-							end
-
-						end
-					end
-				end)
-
-				if not L_101_ then
-					warn("An error occurred:", L_102_) -- Print the error message
-				end
-
-			until not L_18_.GrabGun.Value or not L_8_.Connected
-
-		end
-	end
-})
-
-local L_25_ = L_20_.Main:AddToggle("GunCham", {
-	Title = "Gun Dropped Cham",
-	Default = false,
-	Callback = function(L_115_arg1)
-		if L_115_arg1 then 
-			local L_116_ = game:GetService("Workspace"):FindFirstChild("GunDrop")
-			local L_117_
-
-			repeat
-				task.wait()
-				local L_118_ = game:GetService("Workspace"):FindFirstChild("GunDrop")
-
-				if L_118_ then
-					L_117_ = L_118_:FindFirstChild("GunESP")
-					if not L_117_ then
-						L_117_ = Instance.new("Highlight")
-						L_117_.Name = "GunESP"
-						L_117_.FillTransparency = 0.5
-						L_117_.FillColor = Color3.new(94, 1, 255)
-						L_117_.OutlineColor = Color3.new(94, 1, 255)
-						L_117_.OutlineTransparency = 0
-						L_117_.Parent = L_118_
-					end
-				end
-			until not L_18_.GunCham.Value or not L_8_.Connected
-
-			if L_117_ then 
-				L_117_:Destroy() 
-			end
-		end
-	end
-})
-
-local L_26_ = L_20_.Misc:AddToggle("KillAll", {
-	Title = "Kill Aura",
-	Default = false,
-	Callback = function(L_119_arg1)
-		if L_119_arg1 then 
-			repeat
-				task.wait()
-				local L_120_, L_121_ = pcall(function() 
-
-					local L_122_ = L_11_.Backpack:FindFirstChild("Knife") or L_11_.Character:FindFirstChild("Knife")
-					local L_123_ = tonumber(L_18_.Distance.Value)
-
-					for L_124_forvar1, L_125_forvar2 in ipairs(L_3_:GetPlayers()) do
-						if L_125_forvar2 ~= L_11_ and L_125_forvar2.Character ~= nil then
-							local L_126_ = L_125_forvar2.Character.HumanoidRootPart
-							local L_127_ = L_126_.Position
-							local L_128_ = (L_127_ - L_11_.Character.HumanoidRootPart.Position).Magnitude
-							if (L_128_ <= L_123_) then
-								firetouchinterest(L_126_, L_122_.Handle, 1)
-								firetouchinterest(L_126_, L_122_.Handle, 0)
-							end
-						end  
-					end
-				end)
-			until not L_18_.KillAll.Value or not L_8_.Connected
-		end
-	end
-})
-
-local L_27_ = L_20_.Misc:AddSlider("Distance", {
-	Title = "Aura Distance",
-	Default = 5,
-	Min = 5,
-	Max = 50,
-	Rounding = 0,
-	Callback = function(L_129_arg1)
-	end
-})
-
-local L_28_ = L_20_.Misc:AddToggle("SilentAim", {
-	Title = "Silent Aim",
-	Default = false,
-	Callback = function(L_130_arg1)
-	end
-})
-
-local L_29_ = L_20_.Misc:AddSlider("Slider", {
-	Title = "Accuracy",
-	Default = 5,
-	Min = 25,
-	Max = 100,
-	Rounding = 0,
-	Callback = function(L_131_arg1)
-	end
-})  
-
-local L_30_ = L_20_.Misc:AddToggle("KillMurder", {
-	Title = "Kill Murder",
-	Default = false,
-	Callback = function(L_132_arg1)
-		if L_132_arg1 then
-			repeat
-				local L_133_, L_134_ = pcall(function() 
-					task.wait()
-					local L_135_ = GetMurderer()
-					local L_136_ = game.Players.LocalPlayer
-					local L_137_ = L_136_.Backpack:FindFirstChild("Gun") or L_136_.Character:FindFirstChild("Gun")
-					if not L_137_ then 
-						game:GetService('Players').LocalPlayer.CameraMode = Enum.CameraMode.Classic
-						L_13_ = false
-					end
-					if L_135_ ~= L_136_.Name and L_136_ then
-						local L_138_ = L_136_.Backpack:FindFirstChild("Gun") or L_136_.Character:FindFirstChild("Gun")
-
-						if L_138_ then 
-							L_13_ = true
-							local L_139_ = L_11_.Character:WaitForChild("Humanoid")
-							L_139_:EquipTool(L_138_)
-							game:GetService('Players').LocalPlayer.CameraMode = Enum.CameraMode.LockFirstPerson
-
-						end
-
-						if L_138_ and L_136_ and L_135_ then
-							if workspace[L_136_.Name].Gun.Handle.Reload.IsPlaying then 
-								local L_141_ = L_136_.Character:FindFirstChild("HumanoidRootPart")
-
-								local L_142_ = Vector3.new(-110, 135, 38.946128845215)
-								L_141_.CFrame = CFrame.new(L_142_)
-								repeat
-									task.wait()
-								until not workspace[L_136_.Name].Gun.Handle.Reload.IsPlaying
-							end
-
-
-							local L_140_ = workspace:FindFirstChild(L_135_)
-							if L_140_ and L_136_ then
-								local L_143_ = L_140_:FindFirstChild("HumanoidRootPart")
-								local L_144_ = L_136_.Character
-								local L_145_ = L_144_:FindFirstChild("HumanoidRootPart")
-
-								if L_143_ and L_145_ and L_136_ and L_135_ then
-									-- Calculate the position behind the Murderer
-									local L_146_ = Vector3.new(0, 0, 10)
-									local L_147_ = L_143_.CFrame:PointToWorldSpace(L_146_)
-
-									-- Teleport the player's character to the target position
-									L_144_:SetPrimaryPartCFrame(CFrame.new(L_147_))
-
-									-- Make the character face the Murderer
-									if L_135_ then 
-										L_144_:SetPrimaryPartCFrame(CFrame.new(L_147_, L_143_.Position))
-										local L_148_ = workspace.CurrentCamera
-										L_148_.CFrame = CFrame.new(L_148_.CFrame.Position, (L_143_.Position - Vector3.new(-0.5, 0, 1)))
-									end  
-
-									-- Simulate a click to attack the Murderer
-									spawn(function()
-										wait(0.5)
-
-										local L_149_ = game:GetService("Workspace").CurrentCamera.ViewportSize.X
-										local L_150_ = game:GetService("Workspace").CurrentCamera.ViewportSize.Y
-
-										local L_151_ = L_149_ / 2
-										local L_152_ = L_150_ / 2
-
-										game:GetService("VirtualInputManager"):SendMouseButtonEvent(L_151_, L_152_, 0, true, game, 1)
-										game:GetService("VirtualInputManager"):SendMouseButtonEvent(L_151_, L_152_, 0, false, game, 1)
-									end)  
-								end
-							end
-						end
-					end
-				end)
-			until not L_18_.KillMurder.Value or not L_8_.Connected
-			L_13_ = false
-		end
-	end
-})
-
-L_20_.Misc:AddButton({
-	Title = "Kill All",
-	Callback = function()
-		local L_153_ = L_11_.Backpack:FindFirstChild("Knife") or L_11_.Character:FindFirstChild("Knife")
-		if L_153_ and L_153_:IsA("Tool") then
-			local L_154_ = L_11_.Character
-			local L_155_ = L_154_:WaitForChild("Humanoid")
-			L_155_:EquipTool(L_153_)
-
-			for L_156_forvar1 = 1, 3 do
-				for L_157_forvar1, L_158_forvar2 in ipairs(L_3_:GetPlayers()) do
-					if L_158_forvar2 ~= L_11_ and L_158_forvar2.Character then
-						local L_159_ = L_158_forvar2.Character:WaitForChild("HumanoidRootPart")
-						local L_160_ = L_159_.Position
-
-						L_9_:ClickButton1(Vector2.new())
-
-						firetouchinterest(L_159_, L_153_.Handle, 1)
-						wait(0.1)
-						firetouchinterest(L_159_, L_153_.Handle, 0)
-					end
-				end
-			end
-		end
-	end
-})
-
-local L_31_ = L_20_.Trap:AddToggle("TrapTrail", {
-	Title = "Trap Trail",
-	Default = false,
-	Callback = function(L_161_arg1)
-		if L_161_arg1 then
-			pcall(function()
-
-				local L_162_ = game:GetService("Players").LocalPlayer.PlayerGui.MainGUI.Game.Inventory.Main.Perks.Items.Container.Current.Container
-				local L_163_ = true
-				if L_162_ then
-					for L_164_forvar1, L_165_forvar2 in pairs(L_162_:GetChildren()) do
-						if L_165_forvar2:IsA("Frame") and L_165_forvar2.ItemName.Label.Text == "Trap" then
-							print(L_165_forvar2.ItemName.Label.Text)
-							L_163_ = false 
-						end
-					end
-				end
-
-				if L_163_ then 
-					L_15_:Notify({
-						Title = 'Missing Trap',
-						Content = 'Must own trap \n400 diamonds or 3K coins',
-						Duration = 5
-					})
-					L_163_ = true 
-				end 
-			end)   
-			repeat
-				task.wait()
-				local L_166_, L_167_ = pcall(function()
-					local L_168_ = game.Players.LocalPlayer
-					if L_168_ then
-						local L_169_ = L_168_.Character and L_168_.Character:FindFirstChild("HumanoidRootPart")
-						if L_169_ then
-							local L_170_ = CFrame.new(L_169_.Position)
-							local L_171_ = game:GetService("ReplicatedStorage")
-							local L_172_ = L_171_:FindFirstChild("TrapSystem")
-							if L_172_ and L_172_:FindFirstChild("PlaceTrap") then
-								L_172_.PlaceTrap:InvokeServer(L_170_)
-							end
-						end
-					end
-				end)
-				if not L_166_ then
-					warn("An error occurred:", L_167_) -- Print the error message
-				end
-			until not L_18_.TrapTrail.Value or not L_8_.Connected
-		end
-	end
-})
-
-local L_32_ = L_20_.Trap:AddToggle("AutoTrap", {
-	Title = "Trap All",
-	Default = false,
-	Callback = function(L_173_arg1)
-		if L_173_arg1 then
-			pcall(function()
-
-				local L_174_ = game:GetService("Players").LocalPlayer.PlayerGui.MainGUI.Game.Inventory.Main.Perks.Items.Container.Current.Container
-				local L_175_ = true
-				if L_174_ then
-					for L_176_forvar1, L_177_forvar2 in pairs(L_174_:GetChildren()) do
-						if L_177_forvar2:IsA("Frame") and L_177_forvar2.ItemName.Label.Text == "Trap" then
-							print(L_177_forvar2.ItemName.Label.Text)
-							L_175_ = false 
-						end
-					end
-				end
-				if L_175_ then 
-					L_15_:Notify({
-						Title = 'Missing Trap',
-						Content = 'Must own trap \n400 diamonds or 3K coins',
-						Duration = 5
-					})
-					L_175_ = true 
-				end 
-			end) 
-			repeat
-				task.wait()
-				local L_178_, L_179_ = pcall(function()
-					local L_180_ = game:GetService("ReplicatedStorage")
-					local L_181_ = L_180_:FindFirstChild("TrapSystem")
-
-					if L_181_ and L_181_:FindFirstChild("PlaceTrap") then
-						local L_182_ = game.Players.LocalPlayer
-						local L_183_ = game.Players:GetPlayers()
-
-						for L_184_forvar1, L_185_forvar2 in ipairs(L_183_) do
-							if L_185_forvar2 ~= L_182_ then
-								local L_186_ = L_185_forvar2.Character and L_185_forvar2.Character:FindFirstChild("HumanoidRootPart")
-								if L_186_ then
-									local L_187_ = CFrame.new(L_186_.Position)
-									L_181_.PlaceTrap:InvokeServer(L_187_)
-								end
-							end
-						end
-					end
-				end)
-				if not L_178_ then
-					warn("An error occurred:", L_179_) -- Print the error message
-				end
-			until not L_18_.AutoTrap.Value or not L_8_.Connected
-		end
-	end
-})
-
-local L_33_ = L_20_.Trap:AddToggle("AutoDestroy", {
-	Title = "Auto Destroy Traps",
-	Default = false,
-	Callback = function(L_188_arg1)
-		if L_188_arg1 then 
-			L_15_:Notify({
-				Title = 'Destroy Traps',
-				Content = 'This will delete traps visually [less lag]',
-				Duration = 5
-			})
-
-			repeat
-				task.wait()
-				local L_189_, L_190_ = pcall(function()
-					local L_191_ = workspace:FindFirstChild(L_11_.Name)
-
-					if L_191_ and L_191_:IsA("Model") then
-						for L_192_forvar1, L_193_forvar2 in pairs(L_191_:GetDescendants()) do
-							if L_193_forvar2.Name == "Trap" then
-								L_193_forvar2:Destroy()
-							end
-						end
-					end 
-				end)
-			until not L_18_.AutoDestroy.Value or not L_8_.Connected
-		end
-	end
-})
-
-
-local function L_34_func(L_194_arg1)
-	local L_195_ = L_10_.Character and L_10_.Character:FindFirstChild("Humanoid")
-	if L_195_ then
-		L_195_.WalkSpeed = L_194_arg1
 	end
 end
 
-local L_35_ = L_20_.Player:AddToggle("WalkSpeed", {
-	Title = "Walkspeed",
-	Default = false,
-	Callback = function(L_196_arg1)
-		if L_196_arg1 then 
-			repeat
-				task.wait()  
-				L_34_func(L_18_.Walk.Value)  
-			until not L_18_.WalkSpeed.Value or not L_8_.Connected
-			L_34_func(16)
-		end
-	end
-})
-
-local L_36_ = L_20_.Player:AddSlider("Walk", {
-	Title = "Walk Speed",
-	Default = 16,
-	Min = 16,
-	Max = 200,
-	Rounding = 0,
-	Callback = function(L_197_arg1)
-	end
-})
-
-local function L_37_func(L_198_arg1)
-	local L_199_ = L_10_.Character and L_10_.Character:FindFirstChild("Humanoid")
-	if L_199_ then
-		L_199_.JumpPower = L_198_arg1
-	end
+function refreshchams()
+    for i,v in pairs (workspace:GetDescendants()) do
+        if v.Name == "Highlight" then
+            v:Destroy()
+        end
+    end
+    roleupdaterfix()
 end
 
-local L_38_ = L_20_.Player:AddToggle("JumpPower", {
-	Title = "Jump Power",
-	Default = false,
-	Callback = function(L_200_arg1)
-		if L_200_arg1 then 
-			repeat
-				task.wait()  
-				L_37_func(L_18_.Jump.Value)  
-			until not L_18_.JumpPower.Value or not L_8_.Connected
-			L_37_func(50)
-		end
-	end
-})
-
-local L_39_ = L_20_.Player:AddSlider("Jump", {
-	Title = "Jump Power",
-	Default = 50,
-	Min = 50,
-	Max = 200,
-	Rounding = 1,
-	Callback = function(L_201_arg1)
-	end
-})
-local L_40_
-
-local L_41_ = L_20_.Player:AddToggle("InfiniteJump", {
-	Title = "Infinite Jump",
-	Default = false,
-	Callback = function(L_202_arg1)
-		if L_202_arg1 then 
-			L_40_ = L_6_.JumpRequest:Connect(function()
-				L_11_.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)  
-			end)
-			repeat
-				task.wait()
-			until not L_18_.InfiniteJump.Value or not L_8_.Connected
-			L_40_:Disconnect()
-		end
-	end 
-})
-
-L_20_.Emotes:AddButton({
-	Title = "Ninja",
-	Callback = function()
-		module:emote("ninja")
-	end
-})
-
-L_20_.Emotes:AddButton({
-	Title = "Dab",
-	Callback = function()
-		module:emote("dab")
-	end
-})
-
-L_20_.Emotes:AddButton({
-	Title = "Floss",
-	Callback = function()
-		module:emote("floss")
-	end
-})
-
-L_20_.Emotes:AddButton({
-	Title = "Headless",
-	Callback = function()
-		module:emote("headless")
-	end
-})
-
-L_20_.Emotes:AddButton({
-	Title = "Zen",
-	Callback = function()
-		module:emote("zen")
-	end
-})
-
-L_20_.Emotes:AddButton({
-	Title = "Zombie",
-	Callback = function()
-		module:emote("zombie")
-	end
-}) 
-
-L_20_.Emotes:AddButton({
-	Title = "Sit",
-	Callback = function()
-		module:emote("sit")
-	end
-})
-
-local L_42_ = L_20_.Settings:AddToggle("Settings", {
-	Title = "Save Settings",
-	Default = false,
-	Callback = function(L_203_arg1)
-		if L_203_arg1 then 
-			repeat
-				task.wait(.1)  
-				L_16_:Save(game.PlaceId)
-			until not L_18_.Settings.Value or not L_8_.Connected
-		end
-	end
-})
-
-L_20_.Settings:AddButton({
-	Title = "Delete Setting Config",
-	Callback = function()
-		delfile("FLORENCE/settings/"..game.PlaceId..".json")
-	end  
-})  
-
-local L_43_ = L_20_.Server:AddToggle("AutoRejoin", {
-	Title = "Auto Rejoin",
-	Default = false,
-	Callback = function(L_204_arg1)
-		if L_204_arg1 then 
-			L_15_:Notify({
-				Title = 'Auto Rejoin',
-				Content = 'You will rejoin if you are kicked or disconnected from the game',
-				Duration = 5
-			})
-			repeat
-				task.wait() 
-				local L_205_, L_206_, L_207_ = game:GetService('Players').LocalPlayer, game.CoreGui.RobloxPromptGui.promptOverlay, game:GetService('TeleportService')
-				L_206_.ChildAdded:connect(function(L_208_arg1)
-					if L_208_arg1.Name == 'ErrorPrompt' then
-						L_207_:Teleport(game.PlaceId)
-						task.wait(2)
-					end
-				end)
-			until L_18_.AutoRejoin.Value or not L_8_.Connected
-		end
-	end
-})
-
-local L_44_ = L_20_.Server:AddToggle("ReExecute", {
-	Title = "Auto ReExecute",
-	Default = false,
-	Callback = function(L_209_arg1)
-		if L_209_arg1 then 
-			repeat
-				task.wait()
-				local L_210_ = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
-				if L_210_ then
-					L_210_('loadstring(game:HttpGet("https://raw.githubusercontent.com/13B8B/nexus/main/loadstring"))()')
-				end  
-			until not L_18_.ReExecute.Value or not L_8_.Connected
-		end
-	end 
-})
-L_20_.Server:AddButton({
-	Title = "Rejoin-Server",
-	Callback = function()
-		game:GetService("TeleportService"):Teleport(game.PlaceId, Player)
-	end
-})  
-L_20_.Server:AddButton({
-	Title = "Server-Hop", 
-	Callback = function()
-		local L_211_ = game:GetService("HttpService")
-		local L_212_ = game:GetService("TeleportService")
-		local L_213_ = "https://games.roblox.com/v1/games/"
-		local L_214_, L_215_ = game.PlaceId, game.JobId
-		local L_216_ = L_213_..L_214_.."/servers/Public?sortOrder=Desc&limit=100"
-		local function L_217_func(L_219_arg1)
-			local L_220_ = game:HttpGet(L_216_..((L_219_arg1 and "&cursor="..L_219_arg1) or ""))
-			return L_211_:JSONDecode(L_220_)
-		end
-		local L_218_;
-		repeat
-			local L_221_ = L_217_func(L_218_)
-			for L_222_forvar1, L_223_forvar2 in next, L_221_.data do
-				if L_223_forvar2.playing < L_223_forvar2.maxPlayers and L_223_forvar2.id ~= L_215_ then
-					local L_224_, L_225_ = pcall(L_212_.TeleportToPlaceInstance, L_212_, L_214_, L_223_forvar2.id, Player)
-					if L_224_ then
-						break
-					end
-				end
-			end
-			L_218_ = L_221_.nextPageCursor
-		until not L_218_
-	end
-})
-
-local L_45_, L_46_, L_47_ = nil, nil, false
-
-function GetMurderer()
-	for L_226_forvar1, L_227_forvar2 in pairs(L_3_:GetChildren()) do 
-		if L_227_forvar2.Backpack:FindFirstChild("Knife") or L_227_forvar2.Character:FindFirstChild("Knife") then
-			return L_227_forvar2.Name
-		end
-	end   
-	return nil 
+function SpawnEmotes()
+    local Remote = game.ReplicatedStorage.Remotes.Extras.GetPlayerData:InvokeServer("GetData")
+    local Client = Players.LocalPlayer
+    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+    local Modules = ReplicatedStorage.Modules
+    local EmoteModule = Modules.EmoteModule
+    local Emotes = Client.PlayerGui.MainGUI.Game:FindFirstChild("Emotes")
+    local EmoteList = {"headless","zombie","zen","ninja","floss","dab","sit"}
+    require(EmoteModule).GeneratePage(EmoteList,Emotes,'Your Emotes')
 end
 
-function GetSheriff()
-	for L_228_forvar1, L_229_forvar2 in pairs(L_3_:GetChildren()) do 
-		if L_229_forvar2.Backpack:FindFirstChild("Gun") or (L_229_forvar2.Character and L_229_forvar2.Character:FindFirstChild("Gun")) and L_229_forvar2.Name == "Tool" then
-			return L_229_forvar2.Name
-		end
-	end
-	return nil
+function clearbackpackguns()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.Name ~= "Emotes" then
+            if v.Name ~= "Knife" then
+                if v.Name ~= "Gun" then
+                    if v.Name ~= "Pizza" then
+                        if v.Name ~= "ChocolateMilk" then
+                            if v.Name ~= "IceCream" then
+                                if v.Name ~= "Teddy" then
+                                    if v.Name ~= "FakeBomb" then
+                                        if v.Name ~= "Fireflies" then
+                                            if v.Name ~= "GGSign" then
+                                                if v.Name ~= "SprayPaint" then
+                                                    if v.Name ~= "EggToy2023" then
+                                                        if v.Name ~= "BeachBall2023" then
+                                                            v:Remove()
+                                                        end
+                                                    end
+                                                end
+                                            end
+                                        end
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    task.wait()
 end
 
-coroutine.wrap(function()
-	while true do
-		task.wait(.5)
-		local L_230_, L_231_ = pcall(function()
-			L_45_ = GetMurderer()
-			L_46_ = GetSheriff()
-			if L_45_ then
-			end
-		end)
-	end
-end)()
+function EquipTool()
+    for _,obj in next, game.Players.LocalPlayer.Backpack:GetChildren() do
+        if obj.Name == "Knife" then
+            local equip = game.Players.LocalPlayer.Backpack.Knife
+            equip.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
 
-local L_48_
-L_48_ = hookmetamethod(game, "__namecall", function(L_232_arg1, ...)
-	local L_233_ = getnamecallmethod()
-	local L_234_ = {
-		...
-	}
+function EquipSpray()
+    game:GetService("ReplicatedStorage").Remotes.Extras.ReplicateToy:InvokeServer("SprayPaint")
+    wait()
+    for _,obj in next, game.Players.LocalPlayer.Backpack:GetChildren() do
+        if obj.Name == "SprayPaint" then
+            local equip = game.Players.LocalPlayer.Backpack.SprayPaint
+            equip.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+
+function Stab()
+    game:GetService("Players").LocalPlayer.Character.Knife.Stab:FireServer("Down")
+end
+
+function SprayPaintNotif()
+    if doeshavespraypaint ~= true then
+        sendnotification("You dont have Spray Paint, You will need it to be able to use this.")
+    end
+end
+
+function findgun()
+    GunHolderName = nil
+    for i,v in pairs(game.Players:GetChildren()) do
+        function findgunfix()
+        if v.Name ~= LocalPlayer.Name then
+            local player = Players:FindFirstChild(v.Name)
+            Gun = player and (player.Backpack:FindFirstChild("Gun") or player.Character:FindFirstChild("Gun"))
+            if Gun ~= nil then
+                print("GUN FOUND")
+                GunHolderName = v.Name
+                GunPath = player and (player.Backpack:FindFirstChild("Gun") or player.Character:FindFirstChild("Gun"))
+            end
+        end
+    end
+    wait()
+    pcall(findgunfix)
+    end
+end
+
+function dropgun()
+    N:SendKeyEvent(true,"Backspace",false,game)
+end
+
+--------------------------------------------------------------------------------------EXTRA----------------------------------------------------------------------------------------
+local VirtualUser = game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+    if antiafk == true then
+        VirtualUser:CaptureController()
+        VirtualUser:ClickButton2(Vector2.new())
+    end
+end)
+wait()
+
+local flinglist = {}
+local playerlist = {}
+local playerlistfe = {}
+local antijoinlist = {}
+
+table.insert(flinglist,"All")
+table.insert(playerlistfe,"All")
+table.insert(playerlistfe,game.Players.LocalPlayer.Name)
+
+for i,v in pairs(game.Players:GetPlayers())do
+    if v ~= game.Players.LocalPlayer then
+        table.insert(flinglist,v.Name)
+        table.insert(playerlist,v.Name)
+        table.insert(playerlistfe,v.Name)
+    end
+end
+
+game.Players.LocalPlayer.CharacterAdded:Connect(function(Player)
+    if r3thtoggleui == true then
+        toggleui()
+    end
+    if emotesondeath == true then
+        SpawnEmotes()
+    end
+end)
+
+workspace.ChildAdded:Connect(function(p)
+    if r3thremovedecals == true then
+        if p.Name == "Spray" then
+            p:Destroy()
+            wait()
+        end
+    end
+    wait()
+end)
+
+game.Players.PlayerAdded:Connect(function(player)
+    local name = player.Name
+    table.insert(flinglist,name)
+    table.insert(playerlist,name)
+    table.insert(playerlistfe,name)
+    if antijoinloop == true then
+        table.insert(antijoinlist,name)
+    end
+end)
+
+game.Players.PlayerRemoving:Connect(function(player)
+    local name = player.Name
+    for i,v in pairs(flinglist)do
+        if v == name then  
+            table.remove(flinglist,i)
+        end
+    end
+    for i,v in pairs(playerlist)do
+        if v == name then  
+            table.remove(playerlist,i)
+        end
+    end
+    for i,v in pairs(playerlistfe)do
+        if v == name then  
+            table.remove(playerlistfe,i)
+        end
+    end
+    if antijoinloop == true then
+        for i,v in pairs(antijoinlist)do
+            if v == name then  
+                table.remove(antijoinlist,i)
+            end
+        end
+    end
+end)
+
+mt.__namecall = newcclosure(function(...)
+	local method = tostring(getnamecallmethod());
+	local args = {...}
+
+	if method == 'FireServer' and args[1].Name == 'SayMessageRequest' then 
+        if alwaysalivechat == true then
+            args[3] = "Alive"
+        end
+		return old.__namecall(unpack(args));
+	end
+	return old.__namecall(...)
+end)
+
+setreadonly(mt,true)
+
+getgenv().SheriffAim = false;
+getgenv().GunAccuracy = 25;
+
+local GunHook
+GunHook = hookmetamethod(game, "__namecall", function(self, ...) -------------copy code for shoot player
+	local method = getnamecallmethod()
+	local args = { ... }
 	if not checkcaller() then
-		if typeof(L_232_arg1) == "Instance" then
-			if L_232_arg1.Name == "ShootGun" and L_233_ == "InvokeServer" then
-				if L_18_.SilentAim.Value or L_18_.KillMurder.Value or L_18_.SilentAim.Value and L_18_.KillMurder.Value then 
-					if L_45_ then
-						local L_235_ = workspace[tostring(L_45_)].HumanoidRootPart;
-						local L_236_ = L_235_.AssemblyLinearVelocity;
-						local L_237_ = L_235_.Position 
-						L_234_[2] = L_237_;
+		if typeof(self) == "Instance" then
+			if self.Name == "ShootGun" and method == "InvokeServer" then
+				if getgenv().SheriffAim and getgenv().GunAccuracy then
+					if Murderer then
+						local Root = Players[tostring(Murder)].Character.PrimaryPart;
+						local Veloc = Root.AssemblyLinearVelocity;
+						local Pos = Root.Position + (Veloc * Vector3.new(getgenv().GunAccuracy / 200, 0, getgenv().GunAccuracy/ 200));
+						args[2] = Pos;
 					end;
-				else
-					return L_48_(L_232_arg1, unpack(L_234_));
 				end;
 			end;
 		end;
 	end;
-	return L_48_(L_232_arg1, unpack(L_234_));
+	return GunHook(self, unpack(args));
 end);
 
-local L_49_
-L_49_ = hookmetamethod(game, "__namecall", function(L_238_arg1, ...)
-	local L_239_ = getnamecallmethod()
-	local L_240_ = {
-		...
-	}
-	if not checkcaller() then
-		if tostring(L_239_) == "InvokeServer" and tostring(L_238_arg1) == "GetChance" then
-			wait(13)
-			local L_241_, L_242_ = pcall(function()
-				L_45_ = GetMurderer()
-				L_46_ = GetSheriff()
-			end)
-			if not L_241_ then
-				warn("Error: "..L_242_)
-			end
-			L_47_ = true
-		end
-	end
-	return L_49_(L_238_arg1, unpack(L_240_))
+--------------------------------------------------------------------------------------UNIVERSAL----------------------------------------------------------------------------------------
+if WVryGeXr38ZZtdJWtrBtyeEKdm9Kkweaxm7tnUpuCcH835AQN2aLxV2NeG76kYZuWnCZz4yRr == true then
+    Player:addTextbox("Walkspeed", defualtwalkspeed, function(walkspeed, focusLost)
+        newwalkspeed = tonumber(walkspeed)
+    end)
+else
+    Player:addSlider("Walkspeed", defualtwalkspeed, 0, 200, function(walkspeed)
+        newwalkspeed = tonumber(walkspeed)
+    end)
+end
+
+if WVryGeXr38ZZtdJWtrBtyeEKdm9Kkweaxm7tnUpuCcH835AQN2aLxV2NeG76kYZuWnCZz4yRr == true then
+    Player:addTextbox("Jumppower", defualtjumppower, function(jumppower, focusLost)
+        newjumppower = tonumber(jumppower)
+    end)
+else
+    Player:addSlider("Jumppower", defualtjumppower, 0, 500, function(jumppower)
+        newjumppower = tonumber(jumppower)
+    end)
+end
+
+Player:addToggle("Enable WalkSpeed", false, function(enablewalkspeed)
+    loopwalkspeed = enablewalkspeed
+    while loopwalkspeed do
+        LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = (newwalkspeed)
+        wait()
+    end
+    wait()
+    LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = (defualtwalkspeed)
+    wait()
 end)
 
--- Set libraries and folders
-L_16_:SetLibrary(L_15_)
-L_17_:SetLibrary(L_15_)
-L_16_:SetIgnoreIndexes({})
-L_16_:IgnoreThemeSettings()
-L_17_:SetFolder("JAYYHUB")
-L_16_:SetFolder("JAYYHUB")
+Player:addToggle("Enable JumpPower", false, function(enablejumppower)
+    loopjumppower = enablejumppower
+    while loopjumppower do
+        LocalPlayer.Character:WaitForChild("Humanoid").JumpPower = (newjumppower)
+        wait()
+    end
+    wait()
+    LocalPlayer.Character:WaitForChild("Humanoid").JumpPower = (defualtjumppower)
+    wait()
+end)
 
--- Build interface section and load the game
-L_17_:BuildInterfaceSection(L_20_.Settings, L_20_.Premium)
-L_16_:Load(game.PlaceId)
+if WVryGeXr38ZZtdJWtrBtyeEKdm9Kkweaxm7tnUpuCcH835AQN2aLxV2NeG76kYZuWnCZz4yRr == true then
+    Player:addTextbox("Fly Speed", 50, function(flyspeed, focusLost)
+        newflyspeed = tonumber(flyspeed)
+    end)
+else
+    Player:addSlider("Fly Speed", 50, 0, 500, function(flyspeed)
+        newflyspeed = tonumber(flyspeed)
+    end)
+end
 
--- Select the first tab in the window
-L_19_:SelectTab(1)
+Player:addToggle("Enable Fly", false, function(enablefly)
+    if flyfirst ~= true then
+        flyfirst = true
+        game:GetService("UserInputService").InputBegan:connect(function (input, GPE) 
+            if GPE then return end
+            for i, e in pairs(buttons) do
+                if i ~= "Moving" and input.KeyCode == Enum.KeyCode[i] then
+                    buttons[i] = true
+                    buttons.Moving = true
+                end
+            end
+        end)
+          
+        game:GetService("UserInputService").InputEnded:connect(function (input, GPE) 
+            if GPE then return end
+            local a = false
+            for i, e in pairs(buttons) do
+                if i ~= "Moving" then
+                    if input.KeyCode == Enum.KeyCode[i] then
+                        buttons[i] = false
+                    end
+                    if buttons[i] then a = true end
+                end
+            end
+            buttons.Moving = a
+        end)
+
+        game:GetService("RunService").Heartbeat:connect(function (step) -- The actual fly function, called every frame
+            if flying and c and c.PrimaryPart then
+                local p = c.PrimaryPart.Position
+                local cf = cam.CFrame
+                local ax, ay, az = cf:toEulerAnglesXYZ()
+                c:SetPrimaryPartCFrame(CFrame.new(p.x, p.y, p.z) * CFrame.Angles(ax, ay, az))
+                if buttons.Moving then
+                    local t = Vector3.new()
+                    if buttons.W then t = t + (setVec(cf.lookVector)) end
+                    if buttons.S then t = t - (setVec(cf.lookVector)) end
+                    if buttons.A then t = t - (setVec(cf.rightVector)) end
+                    if buttons.D then t = t + (setVec(cf.rightVector)) end
+                    c:TranslateBy(t * step)
+                end
+            end
+        end)
+    end
+    if enablefly == true then
+        startFly()
+    elseif enablefly == false then
+        endFly()
+    end
+end)
+
+Player:addToggle("Noclip", false, function(noclip)
+    loopnoclip = noclip
+    while loopnoclip do
+        function loopnoclipfix()
+        for a, b in pairs(Workspace:GetChildren()) do
+            if b.Name == LocalPlayer.Name then
+                for i, v in pairs(Workspace[LocalPlayer.Name]:GetChildren()) do
+                    if v:IsA("BasePart") then
+                        v.CanCollide = false
+                    end
+                end 
+            end 
+        end
+        wait()
+    end
+    wait()
+    pcall(loopnoclipfix)
+    end
+end)
+
+Player:addToggle("Swim", false, function(enableswim)
+    if enableswim == true then
+        enableswim = false
+        workspace.Gravity = 0
+        LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+    else
+        enableswim = true
+        workspace.Gravity = defualtgravity
+        LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.RunningNoPhysics)
+    end
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,enableswim)
+    LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,enableswim)
+    wait()
+end)
+
+Player:addToggle("Xray", false, function(xray)
+    local t=false
+
+    local function scan(z,t)
+        for _,i in pairs(z:GetChildren()) do
+            if i:IsA("BasePart") and not i.Parent:FindFirstChild("Humanoid") and not i.Parent.Parent:FindFirstChild("Humanoid") then
+                i.LocalTransparencyModifier=t
+            end
+            scan(i,t)
+        end
+    end
+    function x(v)
+        if v then
+            if xray == true then
+                scan(workspace,0.9)
+            else
+                scan(workspace,0)
+            end
+        else
+            scan(workspace,0)
+        end
+    end
+    t=not t
+    x(t)
+end)
+
+Player:addButton("Respawn", function()
+    LocalPlayer.Character:WaitForChild("Humanoid").Health = 0
+    wait()
+end)
+
+Player:addButton("Open Console", function()
+    game.StarterGui:SetCore("DevConsoleVisible", true)
+    wait()
+end)
+
+Player:addToggle("Enable Reset", false, function(enablereset)
+    game:GetService("StarterGui"):SetCore("ResetButtonCallback", enablereset)
+end)
+
+if WVryGeXr38ZZtdJWtrBtyeEKdm9Kkweaxm7tnUpuCcH835AQN2aLxV2NeG76kYZuWnCZz4yRr == true then
+    Player:addTextbox("FOV", 70, function(FOV, focusLost)
+        game:GetService'Workspace'.Camera.FieldOfView = FOV
+    end)
+else
+    Player:addSlider("FOV", 70, 0, 120, function(FOV)
+        game:GetService'Workspace'.Camera.FieldOfView = FOV
+    end)
+end
+
+ESP:addToggle("Names", false, function(names)
+    loadesp()
+    R3THESP.Names = names
+end)
+
+ESP:addToggle("Boxes", false, function(boxes)
+    loadesp()
+    R3THESP.Box = boxes
+end)
+
+ESP:addToggle("Health", false, function(health)
+    loadesp()
+    R3THESP.HealthBar = health
+end)
+
+ESP:addToggle("Outlines", false, function(names)
+    loadesp()
+    R3THESP.BoxOutline = names
+    R3THESP.NamesOutline = names
+end)
+
+Fling:addDropdown("Select Player", flinglist, function(flingplayerselect)
+    FLINGTARGET = flingplayerselect
+    wait()
+end)
+
+Fling:addToggle("Fling", false, function(flingplayer)
+    if flingplayer == true then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/OtherScripts/Fling.lua'))()
+        wait()
+    end
+    if flingplayer == false then
+        getgenv().flingloop = false
+        wait()
+    end
+end)
+
+Game:addToggle("Mobile Keyboard", false, function(rtxshaders)
+    if rtxshaders == true then
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt'),true))()
+        wait()
+    else
+        for i,v in pairs(game.CoreGui:GetChildren()) do
+            if v.Name == "Keyboard gui WarriorRoberr Version" then
+                v:Destroy()
+            end
+        end
+        wait()
+    end
+end)
+
+Game:addToggle("RTX Shaders", false, function(rtxshaders)
+    if rtxshaders == true then
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/OtherScripts/RTX%20Shaders.lua'),true))()
+        wait()
+    end
+    if rtxshaders == false then
+        for i,v in pairs(game.Lighting:GetChildren()) do
+            if v.Name == "[ R3TH PRIV ]: Sunset" then
+                v:Destroy()
+            elseif v.Name == "[ R3TH PRIV ]: Bloom" then
+                v:Destroy()
+            elseif v.Name == "[ R3TH PRIV ]: Inari taisha" then
+                v:Destroy()
+            elseif v.Name == "[ R3TH PRIV ]: Normal" then
+                v:Destroy()
+            elseif v.Name == "[ R3TH PRIV ]: SunRays" then
+                v:Destroy()
+            elseif v.Name == "[ R3TH PRIV ]: Takayama" then
+                v:Destroy()
+            end
+        end
+        wait()
+    end
+end)
+
+Game:addToggle("Lag Chat", false, function(lagchat)
+    lagchatloop = lagchat
+    while lagchatloop do
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("　", "All")
+        wait(3)
+    end
+end)
+
+Game:addToggle("Chat Spy", false, function(chatspy)
+    if chatspy == true then
+        if chatspyon ~= true then
+            chatspyon = true
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/OtherScripts/ChatSpy.lua'),true))()
+            wait()
+        else
+            privateProperties.Text = "[SPY ENABLED]"
+            StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+            chatspyenabled = true
+            wait()
+        end
+        wait()
+    end
+    if chatspy == false then
+        chatspyenabled = false
+        privateProperties.Text = "[SPY DISABLED]"
+        StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+        wait()
+    end
+end)
+
+Game:addButton("Rejoin", function()
+    game:GetService'TeleportService':TeleportToPlaceInstance(game.PlaceId,game.JobId,game:GetService'Players'.LocalPlayer)
+    wait()
+end)
+
+Game:addButton("Serverhop", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/OtherScripts/Serverhop.lua'),true))()
+    wait()
+end)
+
+--------------------------------------------------------------------------------------COMBAT----------------------------------------------------------------------------------------
+Murderer:addToggle("Auto Kill All", false, function(autokillall)
+    autokillallloop = autokillall
+    while autokillallloop do
+        function autokillallloopfix()
+        EquipTool()
+        wait()
+        local localCharacter = game.Players.LocalPlayer.Character
+        local knife = localCharacter and localCharacter:FindFirstChild("Knife")
+        wait()
+        for _, player in ipairs(game.Players:GetPlayers()) do
+            if player ~= game.Players.LocalPlayer then
+                wait()
+                local playerCharacter = player.Character
+                local humanoidRootPart = playerCharacter and playerCharacter:FindFirstChild("HumanoidRootPart")
+                
+                if humanoidRootPart then
+                    Stab()
+                    firetouchinterest(humanoidRootPart, knife.Handle, 1)
+                    firetouchinterest(humanoidRootPart, knife.Handle, 0)
+                end
+            end
+        end
+        wait()
+    end
+    wait()
+    pcall(autokillallloopfix)
+    end
+end)
+
+Murderer:addToggle("Knife Aura", false, function(knifeaura)
+    knifeauraloop = knifeaura
+    while knifeauraloop do
+        function thtrhthtr()
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v ~= game.Players.LocalPlayer and game.Players.LocalPlayer:DistanceFromCharacter(v.Character.HumanoidRootPart.Position) < kniferangenum then
+                EquipTool()
+                wait()
+                local localCharacter = game.Players.LocalPlayer.Character
+                local knife = localCharacter and localCharacter:FindFirstChild("Knife")
+                wait()
+                local playerCharacter = v.Character
+                local humanoidRootPart = playerCharacter and playerCharacter:FindFirstChild("HumanoidRootPart")
+                
+                if humanoidRootPart then
+                    Stab()
+                    firetouchinterest(humanoidRootPart, knife.Handle, 1)
+                    firetouchinterest(humanoidRootPart, knife.Handle, 0)
+                end
+            end
+        end
+    end
+    wait()
+    pcall(thtrhthtr)
+    end
+end)
+
+kniferangenum = 20
+if WVryGeXr38ZZtdJWtrBtyeEKdm9Kkweaxm7tnUpuCcH835AQN2aLxV2NeG76kYZuWnCZz4yRr == true then
+    Player:addTextbox("Knife Range", 20, function(kniferange, focusLost)
+        kniferangenum = tonumber(kniferange)
+    end)
+else
+    Murderer:addSlider("Knife Range", 20, 5, 100, function(kniferange)
+        kniferangenum = tonumber(kniferange)
+    end)
+end
+
+Murderer:addDropdown("Kill Player SOON", playerlist, function(NAME)
+	print("Selected", NAME)
+end)
+
+Sheriff:addToggle("Gun Silent Aim", false, function(gunsilentaim)
+    getgenv().SheriffAim = gunsilentaim
+end)
+
+Sheriff:addButton("Shoot Murderer SOON", function()
+
+end)
+
+Innocent:addDropdown("Fake Die", {"Lay On Back", "Sit Down"}, function(fakedie)
+    if fakedie == "Lay On Back" then
+        local Human = game:GetService("Players").LocalPlayer.Character and game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+        if not Human then
+            return
+        end
+        Human.Sit = true
+        task.wait(.1)
+        Human.RootPart.CFrame = Human.RootPart.CFrame * CFrame.Angles(math.pi * .5, 0, 0)
+        for _, v in ipairs(Human:GetPlayingAnimationTracks()) do
+            v:Stop()
+        end
+        wait()
+    elseif fakedie == "Sit Down" then
+        game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Sit = true
+        wait()
+    end
+end)
+
+--------------------------------------------------------------------------------------MAIN----------------------------------------------------------------------------------------
+Teleports:addButton("Teleport to Lobby", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.Lobby.Map.Spawns:FindFirstChild("Spawn").Position) * CFrame.new(0,2.5,0)
+end)
+
+Teleports:addButton("Teleport to Voting Room ", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108.5022201538086, 140.69989013671875, 83.28791809082031)
+end)
+
+Teleports:addButton("Teleport to Map", function()
+    for i,v in pairs (workspace:GetDescendants()) do
+        if v.Name == "Spawn" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Position) * CFrame.new(0,2.5,0)
+        elseif v.Name == "PlayerSpawn" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Position) * CFrame.new(0,2.5,0)
+        end
+    end
+end)
+
+Teleports:addButton("Teleport Above Map", function()
+    if workspace:FindFirstChild("Bank2") then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1657.433349609375, 55.1998291015625, -894.1311645507812)
+    else
+        if workspace:FindFirstChild("BioLab") then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4281.05224609375, 77.2977294921875, 513.7952270507812)
+        else
+            if workspace:FindFirstChild("Factory") then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3396.335205078125, 72.9106216430664, 1395.3807373046875)
+            else
+                if workspace:FindFirstChild("Hospital3") then
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-701.52197265625, 53.100040435791016, -2679.240966796875)
+                else
+                    if workspace:FindFirstChild("Hotel") then
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1845.1964111328125, 42.99995040893555, 842.2034301757812)
+                    else
+                        if workspace:FindFirstChild("House2") then
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1499.271728515625, 63.80094528198242, -1143.742431640625)
+                        else
+                            if workspace:FindFirstChild("Mansion2") then
+                                for i,v in pairs (workspace.Mansion2:GetDescendants()) do
+                                    if v.Name == "GlitchProof" then
+                                          v:Destroy()
+                                    end
+                                end
+                                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-902.5350952148438, 29.500106811523438, -1906.47314453125)
+                            else
+                                if workspace:FindFirstChild("MilBase") then
+                                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3308.32421875, 125.00634765625, 2854.347900390625)
+                                else
+                                    if workspace:FindFirstChild("nSOffice") then
+                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(360.3828125, 66.00631713867188, 2420.55908203125)
+                                    else
+                                        if workspace:FindFirstChild("Office3") then
+                                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(155.65457153320312, 73.00385284423828, -2992.73974609375)
+                                        else
+                                            if workspace:FindFirstChild("PoliceStation") then
+                                                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2934.41357421875, 72.90029907226562, 263.7356262207031)
+                                            else
+                                                if workspace:FindFirstChild("ResearchFacility") then
+                                                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(435.5243225097656, 64.59996032714844, -78.25444793701172)
+                                                else
+                                                    if workspace:FindFirstChild("Workplace") then
+                                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3159.590087890625, 44.20138931274414, -571.6121215820312)
+                                                    else
+                                                        if workspace:FindFirstChild("Lobby") then
+                                                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-107.46256256103516, 223.2144012451172, 22.349220275878906)
+                                                        end
+                                                    end
+                                                end
+                                            end
+                                        end
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end)
+
+Teleports:addButton("Teleport To Murderer", function()
+    tptoplayer = players:FindFirstChild(Murder)
+    LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(tptoplayer.Character:WaitForChild("HumanoidRootPart").Position)
+end)
+
+Teleports:addButton("Teleport To Sheriff", function()
+    tptoplayer = players:FindFirstChild(Sheriff)
+    LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(tptoplayer.Character:WaitForChild("HumanoidRootPart").Position)
+end)
+
+Teleports:addDropdown("Teleport to Player", playerlist, function(teleporttoplayer)
+    tptoplayer = players:FindFirstChild(teleporttoplayer)
+    LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(tptoplayer.Character:WaitForChild("HumanoidRootPart").Position)
+end)
+
+Map:addButton("Remove Barriers broken", function() -------------------------------- FIX
+
+end)
+
+Chams:addToggle("Player Chams", false, function(playerchams)
+    playerchamsloop = playerchams
+    while playerchamsloop do
+        function playerchamsloopfix()
+        CreateHighlight()
+        UpdateHighlights()
+        wait(1)
+    end
+    wait()
+    pcall(playerchamsloopfix)
+    end
+    refreshchams()
+end)
+
+Chams:addToggle("Murderer Chams", false, function(murdererchams)
+    if murdererchams == true then
+        murdchams = true
+        wait()
+    end
+    if murdererchams == false then
+        murdchams = false
+        wait()
+    end
+end)
+
+Chams:addToggle("Sheriff Chams", false, function(sheriffchamstoggle)
+    if sheriffchamstoggle == true then
+        sheriffchams = true
+        wait()
+    end
+    if sheriffchamstoggle == false then
+        sheriffchams = false
+        wait()
+    end
+end)
+
+Main:addButton("Expose Roles", function()
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Murderer Is: ".. (Murder), "normalchat")
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Sheriff Is: ".. (Sheriff), "normalchat")
+    wait()
+end)
+
+Main:addButton("Fake Gun", function()
+    game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+end)
+
+Main:addToggle("Auto Break Gun", false, function(autobreakgun)
+    autobreakgunloop = autobreakgun
+    while autobreakgunloop do
+        function autobreakgunloopfix()
+        findgun()
+        GunPath.KnifeServer.ShootGun:InvokeServer(1, 0, "AH")
+    end
+    wait()
+    pcall(autobreakgunloopfix)
+    end
+end)
+
+Main:addToggle("Auto Steal Gun (adding back soon)", false, function(autostealgun)
+
+end)
+
+Main:addToggle("Auto Pickup Gun (adding back soon)", false, function(autopickupgun)
+
+end)
+
+Misc:addButton("Audio Logger", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/v7Usg709', true))()
+end)
+
+Misc:addToggle("Get All Emotes", false, function(getallemotes)
+    emotesondeath = getallemotes
+    if emotesondeath == true then
+        SpawnEmotes()
+        wait()
+    end
+end)
+
+Misc:addDropdown("View Player", playerlist, function(viewplayer)
+    workspace.Camera.CameraSubject = game:GetService("Players")[viewplayer].Character:WaitForChild("Humanoid")
+end)
+
+Misc:addButton("Stop Viewing", function()
+    workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+end)
+
+--------------------------------------------------------------------------------------TOGGLES----------------------------------------------------------------------------------------
+World:addToggle("Loop Interactive", false, function(loopinteractive)
+    loopinteractiveloop = loopinteractive
+    while loopinteractiveloop do
+        function loopinteractiveloopfix()
+        if workspace:FindFirstChild("Bank2") then
+            workspace.Bank2.Interactive.VaultSystem.InteractiveBox.Interact:FireServer()
+        else
+            if workspace:FindFirstChild("Factory") then
+                workspace.Factory.LorryDoor.InteractiveBox.Interact:FireServer()
+            else
+                if workspace:FindFirstChild("MilBase") then
+                    workspace.MilBase.Door.InteractiveBox.Interact:FireServer()
+                else
+                    if workspace:FindFirstChild("ResearchFacility") then
+                        workspace.ResearchFacility.Interactive.ScanSystem.Scanner.InteractiveBox.Interact:FireServer()
+                        workspace.ResearchFacility.Interactive.SirenSystem.InteractiveBox.Interact:FireServer()
+                        workspace.ResearchFacility.Interactive.CloningSystem.InteractiveBox.Interact:FireServer()
+                        workspace.ResearchFacility.Interactive.GarageSystem.InteractiveBox.Interact:FireServer()
+                    end
+                end
+            end
+        end
+        wait()
+    end
+    wait()
+    pcall(loopinteractiveloopfix)
+    end
+end)
+
+World:addToggle("Always Alive Chat", false, function(alwaysalive)
+    if alwaysalive == true then
+        alwaysalivechat = true
+        wait()
+    end
+    if alwaysalive == false then
+        alwaysalivechat = false
+        wait()
+    end
+end)
+
+World:addToggle("See Dead Chat (removed for now)", false, function(seedeadchat)
+
+end)
+
+Visual:addToggle("Infinite Ghost", false, function(infiniteghost)
+    game:GetService("ReplicatedStorage").Remotes.Gameplay.Stealth:FireServer(infiniteghost)
+    wait()
+end)
+
+Visual:addToggle("Sprint Trail", false, function(sprinttrail)
+    game:GetService("Workspace")[LocalPlayer.Name].SpeedTrail.Toggle:FireServer(sprinttrail)
+    wait()
+end)
+
+Visual:addToggle("Improve FPS", false, function(improvefps)
+    improvefpsloop = improvefps
+    while improvefpsloop do
+        for i,v in pairs (workspace:GetDescendants()) do
+            if v.Name == "Pet" then
+                v:Destroy()
+            elseif v.Name == "KnifeDisplay" then
+                v:Destroy()
+            elseif v.Name == "GunDisplay" then
+                v:Destroy()
+            end
+        end
+        wait(10)
+    end
+end)
+
+Visual:addToggle("Delete All Decals", false, function(deletealldecals)
+    removedecals = deletealldecals
+end)
+
+ChromaGuns:addToggle("Loop Drop Guns", false, function(loopdropguns)
+    loopdropgunsloop = loopdropguns
+    while loopdropgunsloop do
+        function loopdropgunsloopfix()
+        game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+        dropgun()
+        task.wait()
+        clearbackpackguns()
+        wait()
+    end
+    wait()
+    pcall(loopdropgunsloopfix)
+    end
+end)
+
+ChromaGuns:addToggle("Rain Guns Lobby", false, function(raingunslobby)
+    if raingunslobby == true then
+        lastposgunrain = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+        task.wait()
+        local R3THRAINGUNS = Instance.new("Part",workspace)
+        R3THRAINGUNS.Name = "R3THRAINGUNS"
+        R3THRAINGUNS.Anchored = true
+        R3THRAINGUNS.BottomSurface = Enum.SurfaceType.Smooth
+        R3THRAINGUNS.TopSurface = Enum.SurfaceType.Smooth
+        R3THRAINGUNS.Color = Color3.fromRGB(0, 0, 0)
+        R3THRAINGUNS.Material = Enum.Material.Plastic
+        R3THRAINGUNS.Size = Vector3.new(300, 0, 300)
+        R3THRAINGUNS.CFrame = CFrame.new(-110, 174, 23)
+        R3THRAINGUNS.Transparency = 1
+        R3THRAINGUNS.Parent = workspace
+        wait()
+        looptprainguns = true
+        wait()
+        looptprainguns0 = game:GetService("RunService").Heartbeat:Connect(function()
+            if _G.looptprainguns == true then
+                dropgun()
+            end
+        end)
+        wait()
+        while looptprainguns do
+            wait()
+            if looptprainguns == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-110.61995697021484, 178.46054077148438, 24.172264099121094)
+                wait()
+                game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+                clearbackpackguns()
+            end
+            wait()
+            if looptprainguns == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-107.0545425415039, 178.46054077148438, 49.758445739746094)
+                wait()
+                game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+                clearbackpackguns()
+            end
+            wait()
+            if looptprainguns == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-107.48245239257812, 178.32301330566406, -21.168886184692383)
+                wait()
+                game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+                clearbackpackguns()
+            end
+            wait()
+            if looptprainguns == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-66.5235595703125, 178.3394317626953, -6.834407329559326)
+                wait()
+                game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+                clearbackpackguns()
+            end
+            wait()
+            if looptprainguns == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-64.53665924072266, 178.43014526367188, 22.159414291381836)
+                wait()
+                game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+                clearbackpackguns()
+            end
+            wait()
+            if looptprainguns == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-107.0545425415039, 178.46054077148438, 49.758445739746094)
+                wait()
+                game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+                clearbackpackguns()
+            end
+            wait()
+            if looptprainguns == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-76.67523956298828, 178.47299194335938, 46.36599349975586)
+                wait()
+                game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+                clearbackpackguns()
+            end
+            wait()
+            if looptprainguns == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-147.1442108154297, 178.46054077148438, 48.81122589111328)
+                wait()
+                game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+                clearbackpackguns()
+            end
+            wait()
+            if looptprainguns == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-158.49029541015625, 178.46054077148438, 18.649372100830078)
+                wait()
+                game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+                clearbackpackguns()
+            end
+            wait()
+            if looptprainguns == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-151.8859405517578, 178.30340576171875, -8.303387641906738)
+                wait()
+                game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+                clearbackpackguns()
+            end
+            wait()
+        end
+    end
+    if raingunslobby == false then
+        looptprainguns0:Disconnect()
+        looptprainguns = false
+        task.wait()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lastposgunrain)
+        wait()
+        for i,v in pairs (workspace:GetDescendants()) do
+            if v.Name == "R3THRAINGUNS" then
+                v:Destroy()
+            end
+        end
+        wait(1)
+        clearbackpackguns()
+        wait()
+    end
+end)
+
+ChromaGuns:addToggle("Pickup All Guns", false, function(pickupallguns)
+    pickupallgunsloop = pickupallguns
+    while pickupallgunsloop do
+        function pickupallgunsloopfix()
+        for _,v in pairs(workspace:GetDescendants()) do
+            if v:IsA("TouchTransmitter") then
+                firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0)
+                wait()
+                firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1)
+                wait()
+            end
+            wait()
+        end
+        wait()
+    end
+    wait()
+    pcall(pickupallgunsloopfix)
+    end
+end)
+
+ChromaGuns:addButton("Delete All Guns From Backpack", function()
+    clearbackpackguns()
+end)
+
+ChromaGuns:addButton("Delete All Guns [CLIENT SIDE]", function()
+    for i,v in pairs(workspace:getDescendants()) do
+        if v:IsA('Tool') then
+            v:Destroy()
+        end
+    end
+    task.wait()
+end)
+
+Trading:addDropdown("Select Player", playerlist, function(tradingName)
+    tradingUsername = tradingName
+end)
+
+Trading:addToggle("Force Trade Player", false, function(forcetrade)
+    forcetradeloop = forcetrade
+    while forcetradeloop do
+        game:GetService("ReplicatedStorage").Trade.SendRequest:InvokeServer(game:GetService("Players")[tradingUsername])
+        wait()
+        game:GetService("ReplicatedStorage").Trade.AcceptRequest:FireServer()
+        wait()
+    end
+end)
+
+Trading:addToggle("Force Trade All", false, function(forcetradeall)
+    forcetradeallloop = forcetradeall
+    while forcetradeallloop do
+        function forcetradeallloopfix()
+        local tradeallplayer = game.Players:GetPlayers()
+        [math.random(1,#game.Players:GetPlayers())]
+        if tradeallplayer.Name ~= LocalPlayer.Name then
+            game:GetService("ReplicatedStorage").Trade.SendRequest:InvokeServer(game:GetService("Players")[tradeallplayer.Name])
+            task.wait()
+            game:GetService("ReplicatedStorage").Trade.AcceptRequest:FireServer()
+            task.wait()
+        end
+    end
+    wait()
+    pcall(forcetradeallloopfix)
+    end
+end)
+
+Trading:addToggle("Hide TradeGUI", false, function(hidetradegui)
+    hidetradeguiloop = true
+    while hidetradeguiloop do
+        function hidetradeguiloopfix()
+        local gui = game:service'Players'.LocalPlayer:WaitForChild'PlayerGui':FindFirstChild("TradeGUI")
+        if not gui then return end
+        gui.Enabled = false
+        local frame = gui:FindFirstChild("Container")
+        if not frame then return end
+        frame.Visible = false
+        wait()
+    end
+    wait()
+    pcall(hidetradeguiloopfix)
+    end
+end)
+
+Trading:addToggle("Auto Accept Trade", false, function(autoaccept)
+    autoacceptloop = autoaccept
+    while autoacceptloop do
+        game:GetService("ReplicatedStorage").Trade.AcceptTrade:FireServer()
+        wait()
+    end
+end)
+
+Traps:addKeybind("Place Trap", Enum.KeyCode.T, function()
+    if placetrap == true then
+        game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(LocalPlayer.Character.Head.Position.X, LocalPlayer.Character.Head.Position.Y, LocalPlayer.Character.Head.Position.Z))
+    end
+end, function()
+	print("Changed Keybind")
+end)
+
+Traps:addToggle("Toggle Place Trap", false, function(toggleplacetrap)
+    if toggleplacetrap == true then
+        placetrap = true
+    end
+    if toggleplacetrap == false then
+        placetrap = false
+    end
+end)
+
+Traps:addToggle("Anti Trap", false, function(antitrap)
+    antitraploop = antitrap
+    while antitraploop do
+        function antitraploopfix()
+        if LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed == 0.009999999776482582 then
+            LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 16
+        end
+        wait()
+    end
+    wait()
+    pcall(antitraploopfix)
+    end
+end)
+
+--------------------------------------------------------------------------------------SPRAYPAINT----------------------------------------------------------------------------------------
+Target:addDropdown("Select Player", flinglist, function(targetName)
+    targetUsername = targetName
+end)
+
+LoopTarget:addToggle("Loop Destroy Player", false, function(loopreset)
+    SprayPaintNotif()
+    loopresetplayer = loopreset
+    while loopresetplayer do
+        function loopresetplayerfix()
+        if targetUsername == "All" then
+            for i,v in pairs(game.Players:GetChildren()) do
+                function loopresetallfix()
+                if v.Name ~= game.Players.LocalPlayer.Name then
+                    resetallplayers = players:FindFirstChild(v.Name)
+                    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (resetallplayers.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+                end
+                wait()
+            end
+            wait()
+            pcall(loopresetallloopfix)
+            end
+        else
+            targetPlayer = players:FindFirstChild(targetUsername)
+            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+            wait()
+        end
+    end
+    wait()
+    pcall(loopresetplayerfix)
+    end
+end)
+
+LoopTarget:addToggle("Loop Trap Player", false, function(looptrap)
+    looptrapplayer = looptrap
+    while looptrapplayer do
+        function looptrapplayerfix()
+        if targetUsername == "All" then
+            for i,v in pairs(game.Players:GetChildren()) do
+                function looptrapallloopfix()
+                if v.Name ~= game.Players.LocalPlayer.Name then
+                    looptrapallplayers = players:FindFirstChild(v.Name)
+                    game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(looptrapallplayers.Character.HumanoidRootPart.Position))
+                    wait()
+                end
+            end
+            wait()
+            pcall(looptrapallloopfix)
+            end
+        else
+            targetPlayer = players:FindFirstChild(targetUsername)
+            game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(targetPlayer.Character.HumanoidRootPart.Position))
+            wait()
+        end
+    end
+    wait()
+    pcall(looptrapplayerfix)
+    end
+end)
+
+LoopTarget:addToggle("Loop Void Player", false, function(loopvoid)
+    SprayPaintNotif()
+    loopvoidplayer = loopvoid
+    while loopvoidplayer do
+        function loopvoidplayerfix()
+        if targetUsername == "All" then
+            for i,v in pairs(game.Players:GetChildren()) do
+                function loopvoidallloopfix()
+                if v.Name ~= game.Players.LocalPlayer.Name then
+                    voidallplayers = players:FindFirstChild(v.Name)
+                    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (voidallplayers.Character.HumanoidRootPart), CFrame.new(8999999488, 8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+                end
+            end
+            wait()
+            pcall(loopvoidallloopfix)
+            end
+        else
+            targetPlayer = players:FindFirstChild(targetUsername)
+            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer.Character.HumanoidRootPart), CFrame.new(8999999488, 8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+            wait()
+        end
+    end
+    wait()
+    pcall(loopvoidplayerfix)
+    end
+end)
+
+LoopTarget:addToggle("Rain Guns On Player", false, function(raingunsplayer)
+    raingunsplayerloop = raingunsplayer
+    while raingunsplayerloop do
+        function raingunsplayerloopfix()
+        if targetUsername == "All" then
+            for i,v in pairs(game.Players:GetChildren()) do
+                function loopraingunsallloopfix()
+                if v.Name ~= LocalPlayer.Name then
+                    LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,8)
+                    game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+                    dropgun()
+                    wait()
+                    clearbackpackguns()
+                    wait()
+                end
+            end
+            wait()
+            pcall(loopraingunsallloopfix)
+            end
+        else
+            targetPlayer = players:FindFirstChild(targetUsername)
+            LocalPlayer.Character.HumanoidRootPart.CFrame = targetPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,8)
+            game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(true)
+            dropgun()
+            wait()
+            clearbackpackguns()
+            wait()
+        end 
+    end
+    wait()
+    pcall(raingunsplayerloopfix)
+    end
+end)
+
+LoopTarget:addToggle("Blind Player", false, function(blindall)
+    SprayPaintNotif()
+    blindallloop = blindall
+    while blindallloop do
+        function blindallloopfix()
+        if targetUsername == "All" then
+            for i,v in pairs(game.Players:GetChildren()) do
+                blindallplayers = players:FindFirstChild(v.Name)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Right, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Top, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Back, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Left, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Bottom, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Front, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+            end
+        else
+            blindallplayers = players:FindFirstChild(targetUsername)
+            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Right, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Top, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Back, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Left, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Bottom, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Front, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
+        end
+        wait(0.5)
+    end
+    wait()
+    pcall(blindallloopfix)
+    end
+end)
+
+LoopTarget:addToggle("Auto Equip Spray Paint", false, function(autoequipspray)
+    SprayPaintNotif()
+    autoequipsprayloop = autoequipspray
+    while autoequipsprayloop do
+        function autoequipsprayloopfix()
+        game:GetService("ReplicatedStorage").Remotes.Extras.ReplicateToy:InvokeServer("SprayPaint")
+        for _,obj in next, game.Players.LocalPlayer.Backpack:GetChildren() do
+            if obj.Name == "SprayPaint" then
+                local equip = game.Players.LocalPlayer.Backpack.SprayPaint
+                equip.Parent = game.Players.LocalPlayer.Character
+            end
+        end
+    end
+    wait()
+    pcall(autoequipsprayloopfix)
+    end
+end)
+
+FE:addDropdown("Select Player", playerlistfe, function(fetarget)
+    fetargetname = fetarget
+end)
+
+function fepenisfunc()
+    -- Top Penis
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Top, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1,-0.7))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Top, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1,-1))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Top, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1,-1.5))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Top, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1,-2))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(13850207336, Enum.NormalId.Top, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1,-2.5))
+    
+    ----Bottom Penis
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Bottom, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.3,-0.5))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Bottom, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.3,-1))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Bottom, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.3,-1.5))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Bottom, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.3,-2))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(13850207336, Enum.NormalId.Bottom, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.3,-2.5))
+
+    -- Left Penis
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Left, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(-0.15,-1.15,-0.5))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Left, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(-0.15,-1.15,-1))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Left, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(-0.15,-1.15,-1.5))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Left, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(-0.15,-1.15,-2))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(13850207336, Enum.NormalId.Left, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(-0.15,-1.15,-2.5))
+
+    -- Right Penis
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Right, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0.15,-1.15,-0.5))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Right, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0.15,-1.15,-1))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Right, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0.15,-1.15,-1.5))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Right, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0.15,-1.15,-2))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(13850207336, Enum.NormalId.Right, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0.15,-1.15,-2.5))
+    
+    -- Front Penis
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(13850207336, Enum.NormalId.Front, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.15,-2.65))
+
+    -- Left Sack
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Top, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0.5,-1,-0.7))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Front, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0.5,-1.15,-0.85))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Bottom, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0.5,-1.3,-0.7))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Right, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(0.65,-1.15,-0.7))
+    
+    -- Right side
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Top, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(-0.5,-1,-0.7))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Front, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(-0.5,-1.15,-0.85))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Bottom, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(-0.5,-1.3,-0.7))
+    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(12976059241, Enum.NormalId.Left, 0.5, (fepenistarget.Character.HumanoidRootPart), fepenistarget.Character.HumanoidRootPart.CFrame * CFrame.new(-0.65,-1.15,-0.7))
+end
+
+FE:addToggle("FE Penis", false, function(fepenis)
+    if fepenis == true then
+        SprayPaintNotif()
+        fepenistarget = players:FindFirstChild(LocalPlayer.Name)
+        fepenisloop = true
+        while fepenisloop do
+            function fepenisloopfix()
+            EquipSpray()
+            task.wait(0.4)
+            if fetargetname == "All" then
+                for i,v in pairs(game.Players:GetPlayers()) do
+                    fepenistarget = players:FindFirstChild(v.Name)
+                    fepenisfunc()
+                    task.wait()
+                end
+            else
+                fepenistarget = players:FindFirstChild(fetargetname)
+                fepenisfunc()
+            end
+            task.wait(15)
+        end
+        wait()
+        pcall(fepenisloopfix)
+        end
+    end
+    if fepenis == false then
+        fepenisloop = false
+        wait()
+    end
+end)
+
+FE:addToggle("FE Cum", false, function(fecum)
+    SprayPaintNotif()
+    fecumloop = fecum
+    while fecumloop do
+        function fecumloopfix()
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v ~= game.Players.LocalPlayer and game.Players.LocalPlayer:DistanceFromCharacter(v.Character.HumanoidRootPart.Position) < 5 then
+                cumtarget = players:FindFirstChild(v.Name)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Front, 3, (cumtarget.Character.RightHand), cumtarget.Character.RightHand.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Top, 3, (cumtarget.Character.LeftLowerArm), cumtarget.Character.LeftLowerArm.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Top, 3, (cumtarget.Character.RightLowerArm), cumtarget.Character.RightLowerArm.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Back, 3, (cumtarget.Character.LeftUpperArm), cumtarget.Character.LeftUpperArm.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Right, 3, (cumtarget.Character.LowerTorso), cumtarget.Character.LowerTorso.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Left, 3, (cumtarget.Character.LeftLowerLeg), cumtarget.Character.LeftLowerLeg.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Top, 3, (cumtarget.Character.LeftUpperLeg), cumtarget.Character.LeftUpperLeg.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Back, 3, (cumtarget.Character.LeftFoot), cumtarget.Character.LeftFoot.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Front, 3, (cumtarget.Character.RightFoot), cumtarget.Character.RightFoot.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Left, 3, (cumtarget.Character.RightLowerLeg), cumtarget.Character.RightLowerLeg.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Right, 3, (cumtarget.Character.RightUpperLeg), cumtarget.Character.RightUpperLeg.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Left, 3, (cumtarget.Character.UpperTorso), cumtarget.Character.UpperTorso.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Right, 3, (cumtarget.Character.Head), cumtarget.Character.Head.CFrame)
+                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1302869037, Enum.NormalId.Front, 3, (cumtarget.Character.Head), cumtarget.Character.Head.CFrame)
+                wait()
+            end
+            wait()
+        end
+        wait()
+    end
+    wait()
+    pcall(fecumloopfix)
+    end
+end)
+
+Antijoin:addToggle("Anti Join", false, function(antijointoggle)
+    SprayPaintNotif()
+    antijoinloop = antijointoggle
+    while antijoinloop do
+        function antijoinloopfix()
+        for i,v in pairs(antijoinlist) do
+            antijoinname = players:FindFirstChild(v)
+            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (antijoinname.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+            wait()
+        end
+    end
+    wait()
+    pcall(antijoinloopfix)
+    end
+end)
+
+Antijoin:addDropdown("Select Player", antijoinlist, function(antijoinletjoin)
+    antijoinletjoinname = antijoinletjoin
+end)
+
+Antijoin:addButton("Let Player Join", function()
+    for i,v in pairs(antijoinlist)do
+        if v == antijoinletjoinname then  
+            table.remove(antijoinlist,i)
+        end
+    end
+end)
+
+Antijoin:addButton("Clear List", function()
+    for i = 1,12 do
+        for i,v in pairs(antijoinlist) do
+            table.remove(antijoinlist,i)
+        end
+    end
+end)
+
+--------------------------------------------------------------------------------------MULTI KILL----------------------------------------------------------------------------------------
+Mutlikill1:addDropdown("Select Player", playerlist, function(Name1)
+    targetUsername1 = Name1
+end)
+
+Mutlikill1:addToggle("Loop Destroy Player", false, function(loopreset1)
+    SprayPaintNotif()
+    loopresetplayer1 = loopreset1
+    while loopresetplayer1 do
+        function loopreserplayer1fix()
+        targetPlayer1 = players:FindFirstChild(targetUsername1)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer1.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer1fix)
+    end
+end)
+
+Mutlikill2:addDropdown("Select Player", playerlist, function(Name2)
+    targetUsername2 = Name2
+end)
+
+Mutlikill2:addToggle("Loop Destroy Player", false, function(loopreset2)
+    SprayPaintNotif()
+    loopresetplayer2 = true
+    while loopresetplayer2 do
+        function loopreserplayer2fix()
+        targetPlayer2 = players:FindFirstChild(targetUsername2)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer2.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer2fix)
+    end
+end)
+
+Mutlikill3:addDropdown("Select Player", playerlist, function(Name3)
+    targetUsername3 = Name3
+	print("Selected", Name3)
+end)
+
+Mutlikill3:addToggle("Loop Destroy Player", false, function(loopreset3)
+    SprayPaintNotif()
+    loopresetplayer3 = loopreset3
+    while loopresetplayer3 do
+        function loopreserplayer3fix()
+        targetPlayer3 = players:FindFirstChild(targetUsername3)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer3.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer3fix)
+    end
+end)
+
+Mutlikill4:addDropdown("Select Player", playerlist, function(Name4)
+    targetUsername4 = Name4
+end)
+
+Mutlikill4:addToggle("Loop Destroy Player", false, function(loopreset4)
+    SprayPaintNotif()
+    loopresetplayer4 = loopreset4
+    while loopresetplayer4 do
+        function loopreserplayer4fix()
+        targetPlayer4 = players:FindFirstChild(targetUsername4)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer4.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer4fix)
+    end
+end)
+
+Mutlikill5:addDropdown("Select Player", playerlist, function(Name5)
+    targetUsername5 = Name5
+end)
+
+Mutlikill5:addToggle("Loop Destroy Player", false, function(loopreset5)
+    SprayPaintNotif()
+    loopresetplayer5 = loopreset5
+    while loopresetplayer5 do
+        function loopreserplayer5fix()
+        targetPlayer5 = players:FindFirstChild(targetUsername5)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer5.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer5fix)
+    end
+end)
+
+Mutlikill6:addDropdown("Select Player", playerlist, function(Name6)
+    targetUsername6 = Name6
+end)
+
+Mutlikill6:addToggle("Loop Destroy Player", false, function(loopreset6)
+    SprayPaintNotif()
+    loopresetplayer6 = true
+    while loopresetplayer6 do
+        function loopreserplayer6fix()
+        targetPlayer6 = players:FindFirstChild(targetUsername6)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer6.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer6fix)
+    end
+end)
+
+Mutlikill7:addDropdown("Select Player", playerlist, function(Name7)
+    targetUsername7 = Name7
+end)
+
+Mutlikill7:addToggle("Loop Destroy Player", false, function(loopreset7)
+    SprayPaintNotif()
+    loopresetplayer7 = loopreset7
+    while loopresetplayer7 do
+        function loopreserplayer7fix()
+        targetPlayer7 = players:FindFirstChild(targetUsername7)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer7.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer7fix)
+    end
+end)
+
+Mutlikill8:addDropdown("Select Player", playerlist, function(Name8)
+    targetUsername8 = Name8
+end)
+
+Mutlikill8:addToggle("Loop Destroy Player", false, function(loopreset8)
+    SprayPaintNotif()
+    loopresetplayer8 = loopreset8
+    while loopresetplayer8 do
+        function loopreserplayer8fix()
+        targetPlayer8 = players:FindFirstChild(targetUsername8)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer8.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer8fix)
+    end
+end)
+
+Mutlikill9:addDropdown("Select Player", playerlist, function(Name9)
+    targetUsername9 = Name9
+end)
+
+Mutlikill9:addToggle("Loop Destroy Player", false, function(loopreset9)
+    SprayPaintNotif()
+    loopresetplayer9 = loopreset9
+    while loopresetplayer9 do
+        function loopreserplayer9fix()
+        targetPlayer9 = players:FindFirstChild(targetUsername9)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer9.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer9fix)
+    end
+end)
+
+Mutlikill10:addDropdown("Select Player", playerlist, function(Name10)
+    targetUsername10 = Name10
+end)
+
+Mutlikill10:addToggle("Loop Destroy Player", false, function(loopreset10)
+    SprayPaintNotif()
+    loopresetplayer10 = loopreset10
+    while loopresetplayer10 do
+        function loopreserplayer10fix()
+        targetPlayer10 = players:FindFirstChild(targetUsername10)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer10.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer10fix)
+    end
+end)
+
+Mutlikill11:addDropdown("Select Player", playerlist, function(Name11)
+    targetUsername11 = Name11
+end)
+
+Mutlikill11:addToggle("Loop Destroy Player", false, function(loopreset11)
+    SprayPaintNotif()
+    loopresetplayer11 = loopreset11
+    while loopresetplayer11 do
+        function loopreserplayer11fix()
+        targetPlayer11 = players:FindFirstChild(targetUsername11)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer11.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer11fix)
+    end
+end)
+
+Mutlikill12:addDropdown("Select Player", playerlist, function(Name12)
+    targetUsername12 = Name12
+end)
+
+Mutlikill12:addToggle("Loop Destroy Player", false, function(loopreset12)
+    SprayPaintNotif()
+    loopresetplayer12 = loopreset12
+    while loopresetplayer12 do
+        function loopreserplayer12fix()
+        targetPlayer12 = players:FindFirstChild(targetUsername12)
+        game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (targetPlayer12.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
+        wait()
+    end
+    wait()
+    pcall(loopreserplayer12fix)
+    end
+end)
+
+--------------------------------------------------------------------------------------SETTINGS----------------------------------------------------------------------------------------
+Settings:addToggle("Anti Afk", true, function(antiafktoggle)
+    antiafk = antiafktoggle
+end)
+
+Settings:addKeybind("UI Toggle", Enum.KeyCode.LeftControl, function()
+	R3TH:toggle()
+end, function()
+	print("Changed Keybind")
+end)
+
+Settings:addToggle("UI Toggle Button", false, function(uitogglebutton)
+    if uitogglebutton == true then
+        r3thtoggleui = true
+        wait()
+        toggleui()
+        wait()
+    end
+    if uitogglebutton == false then
+        r3thtoggleui = false
+        wait()
+        for i,v in pairs (game.CoreGui:GetDescendants()) do
+            if v.Name == "R3THTOGGLEBUTTON" then
+                v:Destroy()
+            end
+        end
+        wait()
+    end
+end)
+
+Credits:addButton("pethicial", function()
+    print("pethicial")
+end)
+
+--------------------------------------------------------------------------------------LOAD----------------------------------------------------------------------------------------
+print("[ R3TH PRIV ]: Successfully loaded the script!")
+R3TH:SelectPage(R3TH.pages[1], true)
+sendnotification("Successfully loaded the script!")
+
+if doeshavespraypaint ~= true then
+    sendnotification("No Spray Paint Found, Some scripts may not work without it.")
+end
+
+roleupdater = true
+while roleupdater do
+    function roleupdaterfix()
+    roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
+    for i, v in pairs(roles) do
+        if v.Role == "Murderer" then
+            Murder = i
+        elseif v.Role == 'Sheriff'then
+            Sheriff = i
+        elseif v.Role == 'Hero'then
+            Hero = i
+        end
+    end
+    wait(1)
+end
+wait()
+pcall(roleupdaterfix)
+end
